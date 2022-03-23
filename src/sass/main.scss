@@ -2,16 +2,26 @@ $org: #ffa616;
 $dark: #000;
 $white: #fff;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,900&display=swap');
+@import url(//db.onlinewebfonts.com/c/013bc3f20021c3221eeb427f1f3929f4?family=Gotham+Pro);
 
-html{
+html {
     width: 100%;
     overflow-x: hidden;
 
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+
+    .card,
+    .card-header,
+    .card-body {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+    }
 
     .container {
         max-width: 1440px;
@@ -24,7 +34,7 @@ body{
     h5,
     h6,
     p {
-        margin-bottom: 0 ;
+        margin-bottom: 0;
     }
 
     ul,
@@ -43,32 +53,36 @@ body{
     }
 
 
-    .navBar{
+    .navBar {
         margin-top: 20px;
         position: absolute;
         z-index: 2;
         width: 100%;
         top: 0;
         left: 0;
-        .row{
+
+        .row {
             padding: 20px 30px;
             background-color: #615b5a6e;
             border-radius: 20px;
             backdrop-filter: blur(50px);
-            ul{
-                li{
-                    a{
+
+            ul {
+                li {
+                    a {
                         color: $white;
                         font-weight: 600;
                         transition: all .2s ease-in-out;
-                        &:hover{
+
+                        &:hover {
                             color: $org;
                             font-size: 25px;
                         }
                     }
                 }
             }
-            .myBtn{
+
+            .myBtn {
                 background-color: $org;
                 color: $dark;
                 padding: 15px 50px;
@@ -78,7 +92,8 @@ body{
                 transition: all .2s ease-in-out;
                 outline: none;
                 border: 1px solid $org;
-                &:hover{
+
+                &:hover {
                     background-color: $white;
                     border: 1px solid $org;
                     color: $org;
@@ -87,7 +102,7 @@ body{
         }
     }
 
-    .header{
+    .header {
         background-image: url('../image/header-bg.webp');
         background-repeat: no-repeat;
         background-size: cover;
@@ -100,15 +115,16 @@ body{
         margin-top: 60px;
         z-index: 1;
 
-        h1{
-            font-weight: 600;
+        h1 {
+            font-weight: 900;
             font-size: 70px;
         }
-        h3{
+
+        h3 {
             margin-bottom: 50px;
         }
 
-        .myBtn{
+        .myBtn {
             background-color: $org;
             color: $dark;
             padding: 20px 50px;
@@ -119,7 +135,8 @@ body{
             outline: none;
             border: 1px solid $org;
             text-transform: uppercase;
-            &:hover{
+
+            &:hover {
                 background-color: $white;
                 border: 1px solid $org;
                 color: $org;
@@ -127,29 +144,304 @@ body{
         }
     }
 
-    .services{
-        padding: 60px 0 160px 0;
+    .services {
+        padding: 120px 0 120px 0;
 
-        .services-text{
-            background-image: url('../image/НАШИ\ УСЛУГИ.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            width: 800px;
-            height: 70px;
-            h2{
-                color: $org;
+        .img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.7;
+        }
+
+        h2 {
+            color: $org;
+            font-weight: 900;
+            font-size: 40px;
+        }
+
+        .services-bt {
+            margin-top: 60px;
+
+            .card {
+                padding: 20px;
+                background: $org;
+                color: $white;
+                padding-bottom: 0;
+                transition: all .5s ease-in-out;
+
+                p {
+                    margin: 15px 0;
+                }
+
+                h5 {
+                    margin-bottom: 15px;
+                    transition: all .3s ease-in-out;
+                }
+
+                .card-header {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card-body {
+                    .srv-btn {
+                        padding: 25px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #222;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translate(50px, 25px);
+                        transition: all .3s ease-in-out;
+
+                        img {
+                            width: 10px;
+                        }
+
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+
+
+                    h5 {
+                        color: $dark;
+                    }
+
+                    .srv-btn {
+                        transform: translate(125px, 25px);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .zed {
+        z-index: 999;
+    }
+
+    .montaj {
+        padding: 0 0 120px 0;
+
+        background-image: url('../image/man-woman-factory.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        background-repeat: repeat-x;
+        position: relative;
+        background-size: 100% 600px;
+
+
+        .zed {
+            text-align: center;
+            position: inherit;
+
+            h2 {
+                font-size: 35px;
                 font-weight: 600;
+                color: $org;
+                margin-top: 200px;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 900;
+                color: $white;
+                margin: 25px 0 15px 0;
+            }
+
+            p {
+                color: $white;
+                font-size: 20px;
+            }
+
+            .myBtns {
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                .myBtn {
+                    background-color: $org;
+                    color: $white;
+                    padding: 30px 60px;
+                    border-radius: 20px;
+                    font-weight: 800;
+                    font-size: 23px;
+                    transition: all .2s ease-in-out;
+                    outline: none;
+                    border: 1px solid $org;
+                    margin-right: 20px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: $white;
+                        border: 1px solid $org;
+                        color: $org;
+                    }
+                }
+            }
+
+
+        }
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #00000044;
+            height: 600px;
+
+        }
+
+    }
+
+    .builder {
+        padding: 150px 0 120px 0;
+
+        .left {
+            .top-sphere {
+                width: 60px;
+                height: 60px;
+                background-color: $org;
+                border-radius: 50%;
+            }
+
+            .bottom-sphere {
+                width: 160px;
+                height: 160px;
+                background-color: $org;
+                border-radius: 50%;
+            }
+
+        }
+
+        .right {
+            color: $org;
+            margin-bottom: 200px;
+
+            .right-q {
+                font-size: 100px;
+                font-family: "Gotham Pro";
+                padding-bottom: 0;
+                transform: translateY(-50px);
+                opacity: 0.5;
+            }
+
+            .right-ql{
+                font-size: 100px;
+                font-family: "Gotham Pro";
+                padding-bottom: 0;
+                transform: translateY(100px) rotate(180deg);
+                opacity: 0.5;
+            }
+
+            .right-r {
+                margin-top: 50px;
+
+                :nth-child(1) {
+                    margin: 0 0 40px 0;
+                    font-size: 20px;
+                }
+
+                :nth-child(2) {
+                    font-size: 21px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+
+
+    }
+
+    .feedback {
+        padding: 0px 0 120px 0;
+        
+        .text-center{
+            .img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0.7;
+            }
+    
+            h2 {
+                color: $org;
+                font-weight: 900;
                 font-size: 40px;
             }
         }
 
-        .services-bt{
-            margin-top: 40px;
+        .col-12 {
+            overflow-x: hidden;
+            padding: 30px 0;
         }
 
+        .swiper {
+            overflow: visible;
+        }
+        
+        .swiper-slide {
+            background-color: $org;
+            margin-top: 50px;
+
+            .img {
+                width: 150px;
+                border: 10px solid #ffcc78;
+                height: 150px;
+                margin: 0 auto;
+                background-color: #000;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateY(-77px);
+
+                img {
+                    width: 70%;
+                    text-align: center;
+                }
+            }
+
+            .info {
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                color: $white;
+                font-size: 20px;
+                padding-bottom: 100px;
+            }
+        }
     }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
