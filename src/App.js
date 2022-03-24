@@ -1,6 +1,7 @@
 import React from 'react'
 import Builder from './components/Builder'
 import Feedback from './components/Feedback'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Montaj from './components/Montaj'
 import Navbar from './components/Navbar'
@@ -15,6 +16,7 @@ const App = () => {
       <Montaj />
       <Builder />
       <Feedback />
+      <Footer />
     </>
   )
 }

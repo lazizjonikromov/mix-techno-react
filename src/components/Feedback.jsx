@@ -19,10 +19,13 @@ const Feedback = () => {
                             <Swiper
                                 slidesPerView={1}
                                 loop={true}
+                                speed={3000}
+                                spaceBetween={40}
                                 autoplay={{
-                                    delay: 2000,
+                                    delay: 4000,
                                     disableOnInteraction: false,
                                 }}
+                                modules={[Autoplay]}
                                 className="mySwiper mt-5"
                             >
                             <SwiperSlide>
@@ -63,7 +66,7 @@ const Feedback = () => {
                                     <div className="img">
                                         <img src="../image/feedback-man-03.png" alt="" />
                                     </div>
-                                    <div className="info">
+                                    <div className="info"> 
                                         <p>
                                             ООО «MIX-ТECHNO HYDRAULICS» оказывало нам услуги по монтажу и наладке башенного крана массой
                                             135 тонн, для грузоподъёмных операций при строительстве нового жилого комплекса ООО
@@ -79,9 +82,7 @@ const Feedback = () => {
                                
                             </Swiper>
                         </div>
-                        <div className="main col-8">
-
-                        </div>
+      
                     </div>
                 </div>
             </div>
