@@ -6,8 +6,8 @@ const Footer = () => {
             <div className="footer">
                 <div className="container">
                     <div className="row d-flex justify-content-center">
-                        <div className="col-3 d-flex flex-column">
-                            <h2>FOLLOW US</h2>
+                        <div className="col-4 d-flex flex-column">
+                            <h2>Подпишитесь на нас</h2>
                             <div className="icons">
                                 <a href="" >
                                     <img src="./image/telegram.png" alt="" />
@@ -26,12 +26,12 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="col-5 d-flex flex-column">
-                            <h2>RECEIVE OUR NEWSLETTER</h2>
+                            <h2>Получить информацию</h2>
                             <div className="footer-input">
-                                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id='phone' maxLength='9' max='9' className='form-control' placeholder='Phone number...' autoComplete='off' />
+                                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id='phone' maxLength='14' max='14' className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
                                 <label htmlFor="phone">+998 </label>
                                 <button type='submit' className='btn'>
-                                    Sign up
+                                    Отправить
                                 </button>
                             </div>
                             <ul>
