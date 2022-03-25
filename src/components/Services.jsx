@@ -12,7 +12,7 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="row services-bt">
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-6">
                             <a href='' className="card">
                                 <div className="card-header">
                                     <img src="./image/service-01.jpg" alt="" className='w-100' />
@@ -26,7 +26,7 @@ const Services = () => {
                                 </div>
                             </a>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-6">
                             <a href='' className="card">
                                 <div className="card-header">
                                     <img src="./image/service-01.jpg" alt="" className='w-100' />
@@ -40,7 +40,7 @@ const Services = () => {
                                 </div>
                             </a>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-6">
                             <a href='' className="card">
                                 <div className="card-header">
                                     <img src="./image/service-01.jpg" alt="" className='w-100' />
@@ -54,7 +54,7 @@ const Services = () => {
                                 </div>
                             </a>
                         </div>
-                        <div className="col-3">
+                        <div className="col-lg-3 col-md-6">
                             <a href='' className="card">
                                 <div className="card-header">
                                     <img src="./image/service-01.jpg" alt="" className='w-100' />
