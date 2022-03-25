@@ -28,11 +28,13 @@ const Footer = () => {
                         <div className="col-5 d-flex flex-column">
                             <h2>Получить информацию</h2>
                             <div className="footer-input">
-                                <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id='phone' maxLength='14' max='14' className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
-                                <label htmlFor="phone">+998 </label>
-                                <button type='submit' className='btn'>
-                                    Отправить
-                                </button>
+                                <form action="" className='d-flex'>
+                                    <input type="number"  id='phone'  className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
+                                    <label htmlFor="phone">+998 </label>
+                                    <button type='submit' className='btn'>
+                                        Отправить
+                                    </button>
+                                </form>
                             </div>
                             <ul>
                                 <li><a href="">Как добраться</a></li>
