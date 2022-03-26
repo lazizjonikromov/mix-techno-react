@@ -6,6 +6,11 @@ $white: #fff;
 @import url(//db.onlinewebfonts.com/c/013bc3f20021c3221eeb427f1f3929f4?family=Gotham+Pro);
 
 html {
+    overflow-x: hidden;
+}
+
+#root {
+    overflow-x: hidden;
 }
 
 body {
@@ -150,6 +155,16 @@ body {
         margin-top: 60px;
         z-index: 1;
 
+        .zed {
+
+            @media(max-width: 767px) {
+                background: #ffffff47;
+                padding: 86px 0;
+                backdrop-filter: blur(20px);
+                border-radius: 53px;
+            }
+        }
+
         h1 {
             font-weight: 900;
             font-size: 70px;
@@ -228,7 +243,7 @@ body {
         }
 
         @media(max-width:1140px) {
-            padding-top: 350px;
+            padding-top: 180px;
             background-position-x: -300px;
         }
 
@@ -237,11 +252,12 @@ body {
         }
 
         @media(max-width:767px) {
-            background-position-x: -900px;
+            background-size: auto 100vh;
+            background-position-x: 0;
         }
 
         @media(max-width:576px) {
-            background-position-x: -1200px;
+            background-position-x: -785px;
         }
 
     }
@@ -269,7 +285,7 @@ body {
             }
 
             @media(max-width:576px) {
-                transform: scale(0.48) translate(-104%, -105%);
+                transform: scale(0.43) translate(-116%, -118%);
             }
         }
 
@@ -366,6 +382,10 @@ body {
                         @media(max-width:767px) {
                             transform: translate(300px, 25px);
                         }
+
+                        @media(max-width:576px) {
+                            transform: translate(180px, 25px);
+                        }
                     }
                 }
 
@@ -397,36 +417,56 @@ body {
             text-align: center;
             position: inherit;
 
-            h2 {
-                font-size: 35px;
-                font-weight: 700;
-                color: $org;
-                margin-top: 200px;
+            .montaj-zed-blur{
 
-
-            }
-
-            h1 {
-                font-size: 50px;
-                font-weight: 900;
-                color: $white;
-                margin: 25px 0 15px 0;
-
-                @media(max-width:992px) {
-                    font-size: 40px;
-
+                h2 {
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: $org;
+                    margin-top: 200px;
+    
+                    @media(max-width:576px) {
+                        font-size: 30px;
+                    }
+                }
+    
+                h1 {
+                    font-size: 50px;
+                    font-weight: 900;
+                    color: $white;
+                    margin: 25px 0 15px 0;
+    
+                    @media(max-width:992px) {
+                        font-size: 40px;
+    
+                    }
+    
+                    @media(max-width:767px) {
+                        font-size: 30px;
+    
+                    }
+    
+                    @media(max-width:576px) {
+                        font-size: 29px;
+                    }
+    
+                }
+    
+                p {
+                    color: $white;
+                    font-size: 20px;
                 }
 
-                @media(max-width:767px) {
-                    font-size: 30px;
-
+                @media(max-width: 767px) {
+                    background: #ffffff47;
+                    backdrop-filter: blur(20px);
+                    border-radius: 53px;
                 }
+
+
             }
 
-            p {
-                color: $white;
-                font-size: 20px;
-            }
+            
 
             .myBtns {
                 position: absolute;
@@ -484,6 +524,7 @@ body {
                 @media(max-width:576px) {
                     display: flex;
                     flex-direction: column;
+                    bottom: 50px;
                 }
             }
 
@@ -499,12 +540,36 @@ body {
             background-color: #00000044;
             height: 600px;
 
+            @media(max-width:576px) {
+                height: 700px;
+            }
+        }
+
+        @media(max-width:1140px) {
+            background-size: auto 650px;
+            background-position-x: -900px;
+        }
+
+        @media(max-width:992px) {
+            background-size: auto 600px;
+            background-position-x: -900px;
+        }
+
+        @media(max-width:767px) {
+            background-size: auto 600px;
+            background-position-x: -900px;
+        }
+
+        @media(max-width:576px) {
+            height: 700px;
+            background-size: auto 700px;
+            background-position-x: -1125px;
         }
 
     }
 
     .builder {
-        padding: 150px 0 120px 0;
+        padding: 120px 0 60px 0;
 
         .left {
             position: relative;
@@ -578,7 +643,6 @@ body {
 
         .right {
             color: $org;
-            margin-bottom: 200px;
             position: relative;
 
             .right-q {
@@ -587,6 +651,9 @@ body {
                 padding-bottom: 0;
                 transform: translateY(-50px);
                 opacity: 0.5;
+                @media(max-width: 576px){
+                    display: none;
+                }
             }
 
             .right-ql {
@@ -595,6 +662,9 @@ body {
                 padding-bottom: 0;
                 transform: translateY(100px) rotate(180deg);
                 opacity: 0.5;
+                @media(max-width: 576px){
+                    display: none;
+                }
             }
 
             .right-r {
@@ -611,9 +681,7 @@ body {
                 }
             }
 
-            @media(max-width:992px) {
-                margin-top: 100px;
-            }
+         
         }
 
 
@@ -704,6 +772,11 @@ body {
                 color: $white;
                 font-size: 20px;
                 padding-bottom: 100px;
+                @media(max-width: 576px){
+                    width: 100%;
+                    text-align: left;
+                    padding: 0px 15px 50px 15px;
+                }
             }
         }
     }
@@ -716,12 +789,13 @@ body {
         height: 420px;
         background-size: 100% 420px;
         color: $white;
-        
+
 
         @media(max-width:992px) {
             padding: 60px 0 60px 0;
             height: 960px;
             background-size: 100% 960px;
+            text-align: center;
         }
 
         .footer-two-section {
@@ -735,6 +809,8 @@ body {
                 display: flex;
                 margin-top: 25px;
                 user-select: none;
+                justify-content: center;
+
 
                 @media(max-width:992px) {
                     width: 100%;
@@ -786,14 +862,19 @@ body {
                         outline: none;
                         border: none;
                     }
+
+                    @media(max-width:992px) {
+                        width: 115px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
 
-        .footer-three{
-            @media(max-width:992px){
+        .footer-three {
+            @media(max-width:992px) {
                 margin-top: 40px;
-            }   
+            }
         }
 
 
@@ -847,6 +928,10 @@ body {
                                 0px 15px 40px rgba(204, 141, 23, 0.842);
                         }
                     }
+
+                    @media(max-width:992px) {
+                        justify-content: center;
+                    }
                 }
 
                 ul {
@@ -887,6 +972,10 @@ body {
                 .location-footer {
                     display: flex;
                     align-items: center;
+
+                    @media(max-width:992px) {
+                        justify-content: center;
+                    }
                 }
 
 

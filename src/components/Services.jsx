@@ -13,7 +13,7 @@ const Services = () => {
                     </div>
                     <div className="row services-bt">
                         <div className="col-lg-3 col-md-6">
-                            <a href='' className="card">
+                            <a href='' className="card mt-4">
                                 <div className="card-header">
                                     <img src="./image/service-01.jpg" alt="" className='w-100' />
                                 </div>
