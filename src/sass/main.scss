@@ -298,8 +298,12 @@ body {
 
             .card {
                 padding: 20px;
-                background: $org;
+                background: transparent;
+                border: 2px solid $org;
                 color: $white;
+                // box-shadow:
+                //     0px 5px 10px rgba(218, 127, 52, 0.788),
+                //     0px 5px 20px rgba(204, 141, 23, 0.842);
                 padding-bottom: 0;
                 transition: all .5s ease-in-out;
                 border-radius: 20px;
@@ -316,6 +320,8 @@ body {
                 .card-header {
                     img {
                         width: 100%;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
                     }
                 }
 
@@ -324,7 +330,8 @@ body {
                         padding: 25px;
                         width: 20px;
                         height: 20px;
-                        background-color: #222;
+                        background-color: $dark;
+                        border: 2px solid $org;
                         border-radius: 50%;
                         display: flex;
                         align-items: center;
@@ -341,6 +348,7 @@ body {
 
                 &:hover {
                     transform: scale(1.1);
+                    background: $org;
                     box-shadow:
                         0px 5px 10px rgba(218, 127, 52, 0.788),
                         0px 5px 20px rgba(204, 141, 23, 0.842);
@@ -351,6 +359,7 @@ body {
 
                     .srv-btn {
                         transform: translate(125px, 25px);
+                        border: 5px solid $org;
 
                         @media(max-width:992px) {
                             transform: translate(180px, 25px);
@@ -363,7 +372,7 @@ body {
                 }
 
                 @media(max-width:992px) {
-                    margin-top: 50px;
+                    margin-top: 80px;
                 }
             }
         }
@@ -392,7 +401,7 @@ body {
 
             h2 {
                 font-size: 35px;
-                font-weight: 600;
+                font-weight: 700;
                 color: $org;
                 margin-top: 200px;
 
@@ -406,7 +415,7 @@ body {
                 margin: 25px 0 15px 0;
 
                 @media(max-width:992px) {
-                    font-size: 30px;
+                    font-size: 40px;
 
                 }
 
@@ -423,8 +432,8 @@ body {
 
             .myBtns {
                 position: absolute;
-                bottom: -35px;
-                left: 50%;
+                bottom: -42px;
+                left: 53%;
                 transform: translateX(-50%);
 
                 .myBtn {
@@ -453,21 +462,22 @@ body {
                             0px 5px 10px rgba(204, 141, 23, 0.842);
                     }
 
-                    @media(max-width:1140px) {
+                    @media(max-width:1600px) {
                         font-size: 20px;
-                        padding: 25px 40px;
+                        padding: 25px 29px;
+                        width: 300px;
                     }
 
                     @media(max-width:992px) {
-                        font-size: 17px;
-                        width: 70%;
+                        font-size: 20px;
+                        width: 315px;
                         padding: 20px 40px;
                     }
 
                     @media(max-width:767px) {
-                        font-size: 14px;
-                        width: 70%;
-                        padding: 20px 30px;
+                        font-size: 20px;
+                        width: 291px;
+                        padding: 15px 30px;
                     }
 
 
@@ -507,35 +517,41 @@ body {
                 height: 600px;
                 top: 0;
                 left: 0;
-                animation: anim1 10s linear infinite;
+                animation: anim1 7s linear infinite;
                 border-radius: 50%;
-                display: none;
                 z-index: -1;
 
                 div {
                     width: 60px;
                     height: 60px;
-                    background-color: $org;
+                    background-color: transparent;
+                    border: 3px solid $org;
                     border-radius: 50%;
+                    box-shadow:
+                        0px 1px 10px rgba(218, 127, 52, 0.788),
+                        0px 1px 10px rgba(204, 141, 23, 0.842);
                 }
             }
 
             .bottom-sphere {
-                display: none;
                 position: absolute;
                 width: 800px;
                 height: 800px;
                 top: 0;
                 left: 0;
-                animation: anim2 10s linear infinite;
+                animation: anim2 20s linear infinite;
                 border-radius: 50%;
                 z-index: -1;
 
                 div {
-                    width: 160px;
-                    height: 160px;
-                    background-color: $org;
+                    width: 120px;
+                    height: 120px;
+                    background-color: transparent;
+                    border: 3px solid $org;
                     border-radius: 50%;
+                    box-shadow:
+                        0px 1px 10px rgba(218, 127, 52, 0.788),
+                        0px 1px 10px rgba(204, 141, 23, 0.842);
                 }
             }
 
@@ -565,6 +581,7 @@ body {
         .right {
             color: $org;
             margin-bottom: 200px;
+            position: relative;
 
             .right-q {
                 font-size: 100px;
@@ -595,6 +612,10 @@ body {
                     font-weight: 500;
                 }
             }
+
+            @media(max-width:992px) {
+                margin-top: 100px;
+            }
         }
 
 
@@ -605,18 +626,44 @@ body {
         padding: 0px 0 120px 0;
 
         .text-center {
+            position: relative;
+
             .img {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 opacity: 0.7;
+
+                @media(max-width:1140px) {
+                    transform: scale(0.8) translate(-62%, -63%);
+                }
+
+                @media(max-width:992px) {
+                    transform: scale(0.8) translate(-62%, -63%);
+                }
+
+                @media(max-width:767px) {
+                    transform: scale(0.6) translate(-83%, -84%);
+                }
+
+                @media(max-width:576px) {
+                    transform: scale(0.48) translate(-104%, -105%);
+                }
             }
 
             h2 {
                 color: $org;
                 font-weight: 900;
                 font-size: 40px;
+
+                @media(max-width:767px) {
+                    font-size: 35px;
+                }
+
+                @media(max-width:576px) {
+                    font-size: 30px;
+                }
             }
         }
 
@@ -672,60 +719,85 @@ body {
         background-size: 100% 420px;
         color: $white;
 
-        .footer-input {
-            position: relative;
-            width: 80%;
-            display: flex;
-            margin-top: 25px;
-            user-select: none;
+        @media(max-width:992px) {
+            padding: 60px 0 60px 0;
+            height: 900px;
+            background-size: 100% 900px;
+        }
 
-            input {
-                padding-left: 75px;
-                font-size: 20px;
-                color: $dark;
-                outline: none;
-                border: none;
-                padding: 25px 0px 25px 75px;
-                background-color: #70655A;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
+        .footer-two-section {
+            @media(max-width:992px) {
+                margin-top: 40px;
+            }
 
-                &::placeholder {
+            .footer-input {
+                position: relative;
+                width: 80%;
+                display: flex;
+                margin-top: 25px;
+                user-select: none;
+
+                @media(max-width:992px) {
+                    width: 100%;
+                }
+
+
+                input {
+                    padding-left: 75px;
+                    font-size: 20px;
                     color: $dark;
-                }
-
-
-                &:focus {
-                    box-shadow: 0px 0px 5px 3px #ffa616;
                     outline: none;
                     border: none;
+                    padding: 25px 0px 25px 75px;
+                    background-color: #70655A;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+
+                    &::placeholder {
+                        color: $dark;
+                    }
+
+
+                    &:focus {
+                        box-shadow: 0px 0px 5px 3px #ffa616;
+                        outline: none;
+                        border: none;
+                    }
                 }
-            }
 
-            label {
-                position: absolute;
-                color: $dark;
-                top: 20%;
-                font-size: 20px;
-                left: 13px;
-            }
+                label {
+                    position: absolute;
+                    color: $dark;
+                    top: 20%;
+                    font-size: 20px;
+                    left: 13px;
+                }
 
-            .btn {
-                color: $org;
-                background: $white;
-                font-weight: 500;
-                width: 130px;
-                text-transform: uppercase;
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
+                .btn {
+                    color: $org;
+                    background: $white;
+                    font-weight: 500;
+                    width: 130px;
+                    text-transform: uppercase;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
 
-                &:focus {
-                    box-shadow: 0px 0px 5px 3px #ffa616;
-                    outline: none;
-                    border: none;
+                    &:focus {
+                        box-shadow: 0px 0px 5px 3px #ffa616;
+                        outline: none;
+                        border: none;
+                    }
                 }
             }
         }
+
+        .footer-three{
+            @media(max-width:992px){
+                margin-top: 40px;
+            }   
+        }
+
+
 
         a {
             color: $white;

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="container">
                     <div className="row d-flex justify-content-center">
-                        <div className="col-4 d-flex flex-column">
+                        <div className="col-lg-4 d-flex flex-column">
                             <h2>Подпишитесь на нас</h2>
                             <div className="icons">
                                 <a href="" >
@@ -25,7 +25,7 @@ const Footer = () => {
                                 <li><a href="#">Правила</a></li>
                             </ul>
                         </div>
-                        <div className="col-5 d-flex flex-column">
+                        <div className="col-lg-5 d-flex flex-column footer-two-section">
                             <h2>Получить информацию</h2>
                             <div className="footer-input">
                                 <form action="" className='d-flex'>
@@ -41,7 +41,7 @@ const Footer = () => {
                                 <li><a href="">Реклама</a></li>
                             </ul>
                         </div>
-                        <div className="col-3 d-flex flex-column">
+                        <div className="col-lg-3 d-flex flex-column footer-three">
                             <h2>Контакты</h2>
                             <div className="phone-call">
                                 <div className="">
