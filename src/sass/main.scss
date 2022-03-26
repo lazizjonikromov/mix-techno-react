@@ -6,8 +6,6 @@ $white: #fff;
 @import url(//db.onlinewebfonts.com/c/013bc3f20021c3221eeb427f1f3929f4?family=Gotham+Pro);
 
 html {
-    width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -718,11 +716,12 @@ body {
         height: 420px;
         background-size: 100% 420px;
         color: $white;
+        
 
         @media(max-width:992px) {
             padding: 60px 0 60px 0;
-            height: 900px;
-            background-size: 100% 900px;
+            height: 960px;
+            background-size: 100% 960px;
         }
 
         .footer-two-section {
