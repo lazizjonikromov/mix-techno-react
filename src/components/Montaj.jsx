@@ -6,7 +6,7 @@ const Montaj = () => {
             <div className="montaj">
                 <div className="container">
                     <div className="row">
-                        <div className="zed">
+                        <div className="zed col-12">
                             <div className="montaj-zed-blur mb-5">
                                 <h2>Монтаж-демонтаж кранов</h2>
                                 <h1>ВЫСШЕЕ КАЧЕСТВО СЕРВИСА</h1>
