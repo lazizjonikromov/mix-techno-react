@@ -406,7 +406,7 @@ body {
                 margin-top: 20px;
             }
 
-            .service-card-one{
+            .service-card-one {
                 @media(max-width:992px) {
                     top: -40px;
                 }
@@ -431,6 +431,7 @@ body {
                 h5 {
                     margin-bottom: 15px;
                     transition: all .3s ease-in-out;
+                    text-transform: uppercase;
                 }
 
                 .card-header {
@@ -442,6 +443,24 @@ body {
                 }
 
                 .card-body {
+                    .btn1 {
+                        padding: 25px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $dark;
+                        border: 2px solid $org;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translate(50px, 50px);
+                        transition: all .3s ease-in-out;
+
+                        img {
+                            width: 10px;
+                        }
+                    }
+
                     .srv-btn {
                         padding: 25px;
                         width: 20px;
@@ -471,6 +490,23 @@ body {
 
                     h5 {
                         color: $dark;
+                    }
+
+                    .btn1{
+                        transform: translate(125px, 50px);
+                        border: 5px solid $org;
+
+                        @media(max-width:992px) {
+                            transform: translate(180px, 50px);
+                        }
+
+                        @media(max-width:767px) {
+                            transform: translate(300px, 50px);
+                        }
+
+                        @media(max-width:576px) {
+                            transform: translate(180px, 50px);
+                        }
                     }
 
                     .srv-btn {
@@ -904,7 +940,7 @@ body {
         color: $white;
         position: relative;
 
-        .blur{
+        .blur {
             position: absolute;
             top: 0;
             left: 0;
@@ -912,6 +948,7 @@ body {
             bottom: 0;
             background-color: #000000b4;
             height: 420px;
+
             @media(max-width:992px) {
                 height: 960px;
             }
@@ -930,7 +967,7 @@ body {
                 margin-top: 40px;
             }
 
-            
+
             .footer-input {
                 position: relative;
                 width: 80%;
@@ -939,7 +976,7 @@ body {
                 user-select: none;
                 justify-content: center;
 
-                form{
+                form {
                     position: relative;
                 }
 
