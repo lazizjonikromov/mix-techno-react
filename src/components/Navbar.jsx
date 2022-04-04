@@ -1,18 +1,29 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [burger, setBurger] = useState(false)
+    const [navbar, setNavbar] = useState(false)
+    const changeNavbar = () => {
+        if (window.scrollY >= 30) {
+            setNavbar(true);
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbar);
     return (
         <>
-            <div className="navBar">
+            <div className={`navBar ${navbar ? 'active' : ''}`}>
                 <div className="container">
                     <div className={`row align-items-center `}>
                         {/* Burger */}
                         
                         <div className="col-lg-1 col-4">
-                            <a href="/">
+                            <Link to="/">
                                 <img src="./image/logo.svg" alt="" className='logo' />
-                            </a>
+                            </Link>
                         </div>
 
                         <div onClick={() => setBurger(!burger)} class={`burger pr-4 ml-auto d-flex d-lg-none ${burger ? 'burgered' : ''}`}>

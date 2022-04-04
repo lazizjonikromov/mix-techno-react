@@ -64,6 +64,7 @@ body {
         top: 0;
         left: 0;
         z-index: 9999;
+        transition: all .5s linear;
 
         .row {
             padding: 20px 30px;
@@ -233,13 +234,27 @@ body {
             }
         }
 
+        &.active {
+            margin-top: 0;
+            background-color: #d3d3d338;
+            border-radius: 0 0 20px 20px;
+            backdrop-filter: blur(50px);
+            border-radius: 0;
+
+            .row {
+                background-color: transparent;
+                border-radius: 0;
+                backdrop-filter: blur(0);
+            }
+        }
+
         @media (max-width:992px) {
             margin: 0;
         }
     }
 
     .header {
-        background-image: url('../image/header-bg.webp');
+        background-image: url('../image/header-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
@@ -359,7 +374,7 @@ body {
     }
 
     .services {
-        padding: 120px 0 120px 0;
+        padding: 120px 0 60px 0;
 
         .img {
             position: absolute;
@@ -401,6 +416,9 @@ body {
 
         .services-bt {
             margin-top: 60px;
+            width: 100%;
+            height: 820px;
+            user-select: none;
 
             @media(max-width:576px) {
                 margin-top: 20px;
@@ -417,12 +435,14 @@ body {
                 background: transparent;
                 border: 2px solid $org;
                 color: $white;
+                margin-bottom: 50px;
                 // box-shadow:
                 //     0px 5px 10px rgba(218, 127, 52, 0.788),
                 //     0px 5px 20px rgba(204, 141, 23, 0.842);
                 padding-bottom: 0;
                 transition: all .5s ease-in-out;
                 border-radius: 20px;
+                cursor: default;
 
                 p {
                     margin: 15px 0;
@@ -437,6 +457,7 @@ body {
                 .card-header {
                     img {
                         width: 100%;
+                        height: 600px;
                         border-top-left-radius: 20px;
                         border-top-right-radius: 20px;
                     }
@@ -453,8 +474,9 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transform: translate(50px, 50px);
-                        transition: all .3s ease-in-out;
+                        transform: translate(50px, 25px);
+                        transition: all .9s ease-in-out;
+                        cursor: pointer;
 
                         img {
                             width: 10px;
@@ -472,7 +494,8 @@ body {
                         align-items: center;
                         justify-content: center;
                         transform: translate(50px, 25px);
-                        transition: all .3s ease-in-out;
+                        transition: all .9s ease-in-out;
+                        cursor: pointer;
 
                         img {
                             width: 10px;
@@ -482,7 +505,6 @@ body {
                 }
 
                 &:hover {
-                    transform: scale(1.1);
                     background: $org;
                     box-shadow:
                         0px 5px 10px rgba(218, 127, 52, 0.788),
@@ -492,25 +514,25 @@ body {
                         color: $dark;
                     }
 
-                    .btn1{
-                        transform: translate(125px, 50px);
+                    .btn1 {
+                        transform: translate(620px, 25px);
                         border: 5px solid $org;
 
                         @media(max-width:992px) {
-                            transform: translate(180px, 50px);
+                            transform: translate(180px, 25px);
                         }
 
                         @media(max-width:767px) {
-                            transform: translate(300px, 50px);
+                            transform: translate(300px, 25px);
                         }
 
                         @media(max-width:576px) {
-                            transform: translate(180px, 50px);
+                            transform: translate(180px, 25px);
                         }
                     }
 
                     .srv-btn {
-                        transform: translate(125px, 25px);
+                        transform: translate(620px, 25px);
                         border: 5px solid $org;
 
                         @media(max-width:992px) {
@@ -935,10 +957,12 @@ body {
         background-image: url('../image/footer-bg.jpg');
         background-repeat: no-repeat;
         width: 100%;
-        height: 420px;
-        background-size: 100% 420px;
+        height: 385px;
+        background-size: 100% 540px;
         color: $white;
         position: relative;
+        padding: 80px 0 0;
+        background-position-y: -154px;
 
         .blur {
             position: absolute;
@@ -947,7 +971,9 @@ body {
             right: 0;
             bottom: 0;
             background-color: #000000b4;
-            height: 420px;
+            height: 385px;
+            backdrop-filter: blur(5px);
+
 
             @media(max-width:992px) {
                 height: 960px;
@@ -958,7 +984,7 @@ body {
         @media(max-width:992px) {
             padding: 60px 0 60px 0;
             height: 960px;
-            background-size: auto 960px;
+            background-size: 200% 1110px;
             text-align: center;
         }
 
@@ -1169,11 +1195,11 @@ body {
 
         a {
             color: $org;
+            display: inline-block;
             transition: all .3s ease-in-out;
 
             &:hover {
                 transform: scale(1.1);
-                display: inline-block;
                 text-shadow:
                     0px 5px 10px rgba(218, 127, 52, 0.788),
                     0px 15px 40px rgba(204, 141, 23, 0.842);
@@ -1182,6 +1208,62 @@ body {
         }
     }
 
+
+
+    .remont-kranov {
+
+        .service-header {
+            background-image: url('../image/service-header-01.png');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            text-align: center;
+            height: 50vh;
+            padding-top: 250px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+        .service-main-01 {
+            h1 {
+                color: $org;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 18px;
+                color: $white;
+            }
+
+            .service-text {
+                margin-top: 100px;
+
+                h2 {
+                    color: $org;
+                    margin-top: 30px;
+                    text-align: center;
+                    padding: 20px 100px;
+                    font-weight: 600;
+                    font-size: 35px;
+                    border: 2px solid $org;
+                    border-radius: 15px;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $org;
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+
+        margin-bottom: 100px;
+    }
 
 
 
