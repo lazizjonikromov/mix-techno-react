@@ -101,7 +101,7 @@ const Services = () => {
                                                 <h5>
                                                     Автоматизация технологических процессов
                                                 </h5>
-                                                <div className="srv-btn">
+                                                <div className="srv-btn" id='btn-srv-top'>
                                                     <img src="./image/service-btn.png" alt="" />
                                                 </div>
                                             </div>
