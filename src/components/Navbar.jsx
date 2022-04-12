@@ -36,11 +36,11 @@ const Navbar = () => {
                             <ul className={`nav-menu d-flex justify-content-around align-items-center`}>
 
 
-                                <li><a href=""> ГЛАВНАЯ </a></li>
-                                <li><a href=""> НАШИ УСЛУГИ </a></li>
-                                <li><a href=""> ПРЕИМУЩЕСТВА </a></li>
-                                <li><a href=""> О КОМПАНИИ </a></li>
-                                <li><a href=""> КОНТАКТЫ </a></li>
+                                <li><a href="/" className='nav-text'> ГЛАВНАЯ </a></li>
+                                <li><a href="" className='nav-text'> НАШИ УСЛУГИ </a></li>
+                                <li><a href="" className='nav-text'> ПОРТФОЛИО </a></li>
+                                <li><a href="/about" className='nav-text'> О КОМПАНИИ </a></li>
+                                <li><a href="" className='nav-text'> КОНТАКТЫ </a></li>
 
                                 <a href="" className="myBtn text-uppercase">
                                     +998 (94) 640-83-56

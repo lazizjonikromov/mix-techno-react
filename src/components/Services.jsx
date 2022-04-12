@@ -31,7 +31,7 @@ const Services = () => {
                             >
                                 <SwiperSlide>
                                     <div className="col-lg-12 col-md-6">
-                                        <Link to='/remont-kranov' className="card service-card-one">
+                                        <Link to='/service-1' className="card service-card-one">
                                             <div className="card-header">
                                                 <img src="./image/service-01.jpg" alt="" className='w-100' />
                                             </div>
@@ -48,7 +48,7 @@ const Services = () => {
 
                                 <SwiperSlide>
                                     <div className="col-lg-12 col-md-6">
-                                        <Link to='/' className="card service-card-one">
+                                        <Link to='/service-2' className="card service-card-one">
                                             <div className="card-header">
                                                 <img src="./image/service-02.png" alt="" className='w-100' />
                                             </div>

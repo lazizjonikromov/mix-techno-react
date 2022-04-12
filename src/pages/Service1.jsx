@@ -1,7 +1,7 @@
 import React from 'react'
 import Services from '../components/Services'
 
-const RemontKranov = () => {
+const Service1 = () => {
   return (
     <>
       <div className="remont-kranov">
@@ -53,4 +53,4 @@ const RemontKranov = () => {
   )
 }
 
-export default RemontKranov
+export default Service1
