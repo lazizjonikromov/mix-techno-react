@@ -771,7 +771,7 @@ body {
             height: 600px;
 
             @media(max-width:576px) {
-                height: 700px;
+                height: 650px;
             }
         }
 
@@ -1365,6 +1365,33 @@ body {
 
             .big-img{
                 width: 100%;
+            }
+        }
+    }
+
+    .service-03{
+        margin-bottom: 100px;
+
+        .service-03-header{
+            background-image: url('../image/service-header-03.png');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            text-align: center;
+            height: 50vh;
+            padding-top: 250px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+        .service-main-03{
+            text-align: center;
+            h2{
+                font-weight: 600;
+                margin-top: 20px;
+                font-size: 40px;
             }
         }
     }

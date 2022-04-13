@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Service1 from "./pages/Service1";
 import Service2 from "./pages/Service2";
+import Service3 from "./pages/Service3";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -25,6 +26,7 @@ ReactDOM.render(
       <Route path="/" exact component={App} />
       <Route path="/service-1" exact component={Service1} />
       <Route path="/service-2" exact component={Service2} />
+      <Route path="/service-3" exact component={Service3} />
       <Route path="/about" exact component={About} />
     </Switch>
     <Footer />

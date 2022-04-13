@@ -6,7 +6,7 @@ const Service2 = () => {
         <>
             <div className="service-02">
                 <div className="service-02-header">
-
+        
                 </div>
 
                 <Services />

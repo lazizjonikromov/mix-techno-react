@@ -69,9 +69,9 @@ const Services = () => {
 
                                 <SwiperSlide>
                                     <div className="col-lg-12 col-md-6">
-                                        <Link to='/' className="card service-card-one">
+                                        <Link to='/service-3' className="card service-card-one">
                                             <div className="card-header">
-                                                <img src="./image/service-03.jpg" alt="" className='w-100' />
+                                                <img src="./image/service-04.jpg" alt="" className='w-100' />
                                             </div>
                                             <div className="card-body">
                                                 <p>
@@ -92,7 +92,7 @@ const Services = () => {
                                     <div className="col-lg-12 col-md-6">
                                         <Link to='/' className="card service-card-one">
                                             <div className="card-header">
-                                                <img src="./image/service-04.jpg" alt="" className='w-100' />
+                                                <img src="./image/service-03.jpg" alt="" className='w-100' />
                                             </div>
                                             <div className="card-body">
                                                 <p>
