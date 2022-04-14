@@ -6,8 +6,32 @@ $white: #fff;
 @import url(//db.onlinewebfonts.com/c/013bc3f20021c3221eeb427f1f3929f4?family=Gotham+Pro);
 
 html {
+    width: 100%;
     overflow-x: hidden;
+
+    ::selection {
+        background-color: $org;
+        color: $white;
+    }
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $org;
+        border-radius: 10px;
+    }
+
 }
+
 
 #root {
     overflow-x: hidden;
@@ -247,10 +271,10 @@ body {
                 backdrop-filter: blur(0);
             }
 
-            .nav-text{
+            .nav-text {
                 color: $dark !important;
 
-                &:hover{
+                &:hover {
                     color: $org !important;
                 }
 
@@ -492,12 +516,12 @@ body {
 
                 .card-body {
 
-                    p{
+                    p {
                         color: $dark;
                         transition: all .3s ease-in-out;
                     }
 
-                    h5{
+                    h5 {
                         color: $org;
                     }
 
@@ -505,6 +529,7 @@ body {
                         width: 256px;
                         height: 190px;
                     }
+
                     .btn1 {
                         padding: 25px;
                         width: 20px;
@@ -528,7 +553,7 @@ body {
                         }
                     }
 
-                    #btn-srv-top{
+                    #btn-srv-top {
                         @media(max-width:576px) {
                             margin-top: 10px;
                         }
@@ -565,7 +590,7 @@ body {
                         0px 5px 10px rgba(218, 127, 52, 0.788),
                         0px 5px 20px rgba(204, 141, 23, 0.842);
 
-                    p{
+                    p {
                         color: $white;
                     }
 
@@ -612,7 +637,7 @@ body {
                     margin-top: 80px;
                     // height: 620px;
                 }
-                
+
             }
         }
 
@@ -1255,7 +1280,7 @@ body {
         padding: 30px 0;
         color: $white;
 
-        p{
+        p {
             color: $dark;
         }
 
@@ -1332,7 +1357,7 @@ body {
     }
 
 
-    .service-02{
+    .service-02 {
         .service-02-header {
             background-image: url('../image/service-header-02.png');
             background-repeat: no-repeat;
@@ -1347,32 +1372,34 @@ body {
             z-index: 1;
         }
 
-        .service-main-02{
-            h2{
+        .service-main-02 {
+            h2 {
                 color: $org;
                 font-weight: 600;
             }
-            .service-02-img{
+
+            .service-02-img {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin: 50px 0;
-                img{
+
+                img {
                     margin: 0 10px;
                     width: 450px;
                 }
             }
 
-            .big-img{
+            .big-img {
                 width: 100%;
             }
         }
     }
 
-    .service-03{
+    .service-03 {
         margin-bottom: 100px;
 
-        .service-03-header{
+        .service-03-header {
             background-image: url('../image/service-header-03.png');
             background-repeat: no-repeat;
             background-size: 100% 700px;
@@ -1386,19 +1413,84 @@ body {
             z-index: 1;
         }
 
-        .service-main-03{
+        .service-main-03 {
             text-align: center;
-            h2{
+
+            h2 {
                 font-weight: 600;
                 margin-top: 20px;
                 font-size: 40px;
             }
         }
+
+        .srv-03-btns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+
+            button{
+                color: $white;
+                background-color: $org;
+                width: 100%;
+                border: 2px solid transparent;
+                margin: 0 20px;
+                font-size: 20px;
+                transition: all .5s ease-in-out;
+                &:focus{
+                    box-shadow: none;
+                }
+                &:hover{
+                    background-color: transparent;
+                    color: $org;
+                    border: 2px solid $org;
+
+                    box-shadow:
+                        0px 5px 10px rgba(218, 127, 52, 0.788),
+                        0px 15px 40px rgba(204, 141, 23, 0.842);
+                }
+            }
+
+            .top {
+                display: flex;
+                justify-content: space-around;
+                width: 70%;
+            }
+
+            .bottom {
+                margin-top: 40px;
+                justify-content: space-around;
+                display: flex;
+                width: 70%;
+            }
+        }
+
+    }
+
+    .service-04 {
+        margin-bottom: 100px;
+
+        .service-04-header {
+            background-image: url('../image/service-header-04.png');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            text-align: center;
+            height: 50vh;
+            padding-top: 250px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+
+
     }
 
 
-    .about{
-        .header{
+    .about {
+        .header {
             background-image: url('../image/about-header.png');
             background-repeat: no-repeat;
             background-size: 100% 600px;
@@ -1411,7 +1503,7 @@ body {
             z-index: 1;
         }
 
-        .about-main{
+        .about-main {
             padding: 75px 0 90px 0;
 
             .img {
@@ -1420,46 +1512,48 @@ body {
                 left: 50%;
                 transform: translate(-50%, -50%);
                 opacity: 0.7;
-    
+
                 @media(max-width:1140px) {
                     transform: scale(0.8) translate(-62%, -63%);
                 }
-    
+
                 @media(max-width:992px) {
                     transform: scale(0.8) translate(-62%, -63%);
                 }
-    
+
                 @media(max-width:767px) {
                     transform: scale(0.6) translate(-83%, -84%);
                 }
-    
+
                 @media(max-width:576px) {
                     transform: scale(0.43) translate(-116%, -118%);
                 }
             }
-    
+
             h2 {
                 color: $org;
                 font-weight: 700;
                 font-size: 50px;
-    
+
                 @media(max-width:767px) {
                     font-size: 35px;
                 }
-    
+
                 @media(max-width:576px) {
                     font-size: 30px;
                 }
             }
 
-            .about-main-text{
+            .about-main-text {
                 margin: 70px 0 0 0;
                 display: flex;
                 justify-content: center;
-                h1{
+
+                h1 {
                     font-weight: 600;
                 }
-                p{
+
+                p {
                     text-align: center;
                     margin: 50px 0 100px 0;
                     font-weight: 700;

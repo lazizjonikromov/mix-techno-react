@@ -18,6 +18,17 @@ const Service3 = () => {
                                 <p>Продажа техники и комплектующих</p>
                                 <h2>ПРОМЫШЛЕННОЕ ДИСТАНЦИОННОЕ <br /> УПРАВЛЕНИЕ</h2>
 
+                                <div className="srv-03-btns">
+                                    <div className="top">
+                                        <button className='btn'>Промышленное дистанционное <br /> управление</button>
+                                        <button className='btn'>Приводные системы</button>
+                                    </div>
+                                    <div className="bottom">
+                                        <button className='btn'>Траверсы и грузозахватные <br /> приспособления</button>
+                                        <button className='btn'>Запчасти</button>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
