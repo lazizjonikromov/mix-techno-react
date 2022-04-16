@@ -20,6 +20,7 @@ import Service2 from "./pages/Service2";
 import Service3 from "./pages/Service3";
 import Service4 from "./pages/Service4";
 import ScrollToTop from "./components/ScrollToTop";
+import Services from "./pages/Services";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/service-2" exact component={Service3} />
       <Route path="/service-3" exact component={Service4} />
       <Route path="/about" exact component={About} />
+      <Route path="/services" exact component={Services} />
     </Switch>
     <Footer />
   </BrowserRouter>,

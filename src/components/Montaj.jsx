@@ -16,7 +16,7 @@ const Montaj = () => {
                             <div className="d-flex justify-content-center align-items-center myBtns">
                                 <a href="/" className='myBtn'>Наши услуги</a>
                                 <a href="/" className='myBtn'>Оставить Заявку</a>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -28,3 +28,4 @@ const Montaj = () => {
 }
 
 export default Montaj
+ 

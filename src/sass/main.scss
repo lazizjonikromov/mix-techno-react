@@ -1566,7 +1566,29 @@ body {
     }
 
 
+    .services-page{
+        margin-bottom: 100px;
 
+        .service-page-header{
+            background-image: url('../image/services-page-header.png');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            text-align: center;
+            height: 50vh;
+            padding-top: 250px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+        
+
+
+    }
+
+    
 
 
 

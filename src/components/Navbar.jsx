@@ -19,7 +19,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className={`row align-items-center `}>
                         {/* Burger */}
-                        
+
                         <div className="col-lg-1 col-4">
                             <Link to="/">
                                 <img src="./image/logo.svg" alt="" className='logo' />
@@ -31,20 +31,30 @@ const Navbar = () => {
                             <div class="burger2"></div>
                             <div class="burger3"></div>
                         </div>
-                        
+
                         <div className={`col-lg-11 nimadur ${burger ? '' : 'burgered'}`}>
                             <ul className={`nav-menu d-flex justify-content-around align-items-center`}>
 
+                                <li>
+                                    <Link onClick={() => setBurger(false)} to='/' className='nav-text'> ГЛАВНАЯ </Link>
+                                </li>
+                                <li>
+                                    <Link onClick={() => setBurger(false)} to='/services' className='nav-text'> НАШИ УСЛУГИ </Link>
+                                </li>
+                                <li>
+                                    <Link onClick={() => setBurger(false)} to='' className='nav-text'> ПОРТФОЛИО </Link>
+                                </li>
+                                <li>
+                                    <Link onClick={() => setBurger(false)} to='/about' className='nav-text'> О КОМПАНИИ </Link>
+                                </li>
+                                <li>
+                                    <Link onClick={() => setBurger(false)} to='' className='nav-text'> КОНТАКТЫ </Link>
+                                </li>
 
-                                <li><a href="/" className='nav-text'> ГЛАВНАЯ </a></li>
-                                <li><a href="" className='nav-text'> НАШИ УСЛУГИ </a></li>
-                                <li><a href="" className='nav-text'> ПОРТФОЛИО </a></li>
-                                <li><a href="/about" className='nav-text'> О КОМПАНИИ </a></li>
-                                <li><a href="" className='nav-text'> КОНТАКТЫ </a></li>
-
-                                <a href="" className="myBtn text-uppercase">
+                                <a href="tel: +998946408356" className="myBtn text-uppercase">
                                     +998 (94) 640-83-56
                                 </a>
+
                             </ul>
                         </div>
                     </div>
