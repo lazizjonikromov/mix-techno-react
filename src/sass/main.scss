@@ -206,13 +206,65 @@ body {
 
         }
 
+        // .burger {
+        //     position: relative;
+        //     width: 30px;
+        //     height: 30px;
+        //     margin-right: 25px;
+        //     transition: all .5s ease-in-out;
+        //     z-index: 99;
+        //     display: none;
+        //     margin-left: auto;
+        //     padding-right: 40px;
+
+        //     .burger1,
+        //     .burger2,
+        //     .burger3 {
+        //         position: absolute;
+        //         width: 30px;
+        //         height: 2px;
+        //         background-color: #ff8300;
+        //         border-radius: 20px;
+        //         transition: all .5s ease-in-out;
+        //     }
+
+        //     .burger1 {
+        //         top: 0;
+        //     }
+
+        //     .burger2 {
+        //         top: 9px;
+        //         transition: all .3s ease-in-out;
+        //     }
+
+        //     .burger3 {
+        //         top: 18px;
+        //     }
+
+        //     &.burgered {
+
+        //         .burger1 {
+        //             transform: translateY(10px) rotate(45deg);
+        //         }
+
+        //         .burger2 {
+        //             opacity: 0;
+        //         }
+
+        //         .burger3 {
+        //             transform: translateY(-8px) rotate(-45deg);
+        //             // width: 50%;
+        //         }
+        //     }
+        // }
+
         .burger {
             position: relative;
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
             margin-right: 25px;
             transition: all .5s ease-in-out;
-            z-index: 99;
+            z-index: 999999;
             display: none;
             margin-left: auto;
             padding-right: 40px;
@@ -221,9 +273,9 @@ body {
             .burger2,
             .burger3 {
                 position: absolute;
-                width: 30px;
-                height: 2px;
-                background-color: #ff8300;
+                width: 25px;
+                height: 3px;
+                background-color: $org;
                 border-radius: 20px;
                 transition: all .5s ease-in-out;
             }
@@ -235,6 +287,8 @@ body {
             .burger2 {
                 top: 9px;
                 transition: all .3s ease-in-out;
+                width: 50%;
+                right: 0px;
             }
 
             .burger3 {
