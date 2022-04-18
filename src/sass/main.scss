@@ -69,7 +69,7 @@ body {
     li {
         list-style: none;
         margin: 0;
-        padding: 0 !important;
+        padding: 0;
     }
 
     img {
@@ -1429,7 +1429,7 @@ body {
             align-items: center;
             margin: 50px 0;
 
-            button{
+            button {
                 color: $white;
                 background-color: $org;
                 width: 100%;
@@ -1437,10 +1437,12 @@ body {
                 margin: 0 20px;
                 font-size: 20px;
                 transition: all .5s ease-in-out;
-                &:focus{
+
+                &:focus {
                     box-shadow: none;
                 }
-                &:hover{
+
+                &:hover {
                     background-color: transparent;
                     color: $org;
                     border: 2px solid $org;
@@ -1566,10 +1568,10 @@ body {
     }
 
 
-    .services-page{
+    .services-page {
         margin-bottom: 100px;
 
-        .service-page-header{
+        .service-page-header {
             background-image: url('../image/services-page-header.png');
             background-repeat: no-repeat;
             background-size: 100% 700px;
@@ -1583,12 +1585,186 @@ body {
             z-index: 1;
         }
 
-        
+        .service-page-main {
+            margin-top: 100px;
+
+            .catalogs {
+                background-color: $org;
+                border-radius: 20px;
+                padding: 0 15px 20px 15px;
+
+                h3 {
+                    padding: 18px;
+                    background: $white;
+                    margin-top: 15px;
+                    border-radius: 20px;
+                    font-weight: 600;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        padding: 15px 0px 15px 15px;
+                        border-bottom: 1px dashed $dark;
+
+                        a {
+                            color: $dark;
+                            transition: all .3s ease-in-out;
+                            font-size: 18px;
+
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .catalog-product {
+                padding-left: 60px;
+
+                h1 {
+                    color: $org;
+                    font-weight: 700;
+                }
+
+                .section-01 {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 40px;
+
+                    .left {
+                        width: 40%;
+
+                        h6 {
+                            border-bottom: 2px solid $dark;
+                            margin-top: 30px;
+                            padding: 15px;
+
+                            span {
+                                float: right;
+                            }
+                        }
+
+                        .myBtn {
+                            margin-top: 50px;
+                            background: $dark;
+                            color: $white;
+                            font-weight: 600;
+                            transition: all .4s ease-in-out;
+                            border: 2px solid transparent;
+
+                            &:hover {
+                                border: 2px solid $dark;
+                                color: $dark;
+                                background: $white;
+                            }
+                        }
+
+                        p {
+                            margin-top: 40px;
+                        }
+                    }
+
+                    .right {
+                        width: 50%;
+
+                        img {
+                            border-radius: 10px;
+                        }
+
+                        .swiper-button-prev {
+                            width: 60px;
+                            height: 50px;
+                            background: rgba(255, 255, 255, .15);
+                            border-radius: 16px;
+                            border: 2px solid $dark;
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                border: 2px solid $org;
+                                transform: scale(1.1);
+
+                                &:after {
+                                    color: $org;
+                                    transform: scale(1.1);
+                                }
+                            }
+
+                            &:after {
+                                font-size: 22px;
+                                color: $dark;
+                                font-weight: 900;
+                                // font-size: 20px;
+                                // background: #dee4e5;
+                                // padding: 15px 20px;
+                                // border-radius: 10px;
+                                // color: black;
+                                // margin-left: 20px;
+                            }
+                        }
+
+                        .swiper-button-next {
+                            width: 60px;
+                            height: 50px;
+                            background: rgba(255, 255, 255, .15);
+                            border-radius: 16px;
+                            border: 2px solid $dark;
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                border: 2px solid $org;
+                                transform: scale(1.1);
+
+                                &:after {
+                                    color: $org;
+                                    transform: scale(1.1);
+                                }
+                            }
+
+                            &:after {
+                                font-size: 22px;
+                                color: $dark;
+                                font-weight: 900;
+                                // font-size: 20px;
+                                // background: #dee4e5;
+                                // padding: 15px 20px;
+                                // border-radius: 10px;
+                                // color: black;
+                                // margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .section-02 {
+                    margin-top: 50px;
+
+                    .section-02-1 {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+
+                    .section-02-2 {
+                        display: flex;
+                        justify-content: space-around;
+                        margin-top: 50px;
+                    }
+
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+
+            }
+        }
 
 
     }
 
-    
+
 
 
 
