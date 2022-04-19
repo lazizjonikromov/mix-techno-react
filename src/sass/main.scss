@@ -1621,6 +1621,220 @@ body {
 
     }
 
+    .contact {
+        .header {
+            background-image: url('../image/contact-header.png');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            height: 50vh;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+        .contact-main {
+            padding: 100px 0;
+
+            .map {
+                display: flex;
+                justify-content: center;
+
+                iframe {
+                    width: 90%;
+                    border: 1px solid $org;
+                    border-radius: 20px;
+                }
+            }
+
+            .contact-main-text {
+                display: flex;
+                background: $org;
+                justify-content: space-between;
+                padding: 50px;
+                width: 80%;
+                align-items: center;
+                border-radius: 20px;
+                margin: 0;
+                margin-top: 30px;
+                margin-left: 145px;
+
+                .phone {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        margin-left: 20px;
+                        color: $white;
+                    }
+                }
+
+                .map {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        margin-left: 20px;
+                        color: $white;
+                    }
+                }
+
+                .message {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        margin-left: 20px;
+                        color: $white;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .send {
+        .header {
+            background-image: url('../image/header-bg.webp');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            background-attachment: fixed;
+            height: 50vh;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 60px;
+            z-index: 1;
+        }
+
+        .send-main {
+            padding: 100px 0;
+
+            .img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0.7;
+
+                @media(max-width:1140px) {
+                    transform: scale(0.8) translate(-62%, -63%);
+                }
+
+                @media(max-width:992px) {
+                    transform: scale(0.8) translate(-62%, -63%);
+                }
+
+                @media(max-width:767px) {
+                    transform: scale(0.6) translate(-83%, -84%);
+                }
+
+                @media(max-width:576px) {
+                    transform: scale(0.43) translate(-116%, -118%);
+                }
+            }
+
+            h2 {
+                color: $org;
+                font-weight: 900;
+                font-size: 40px;
+
+                @media(max-width:767px) {
+                    font-size: 35px;
+                }
+
+                @media(max-width:576px) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                text-align: center;
+                margin-top: 30px;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            .form-send {
+                margin: 50px 0 0 0;
+
+                form {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: auto;
+
+                    .input {
+                        display: flex;
+                        justify-content: center;
+                        width: 200%;
+
+                        @media (max-width:1140px) {
+                            display: flex;
+                            flex-direction: column;
+                            width: 150%;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        input {
+                            margin: 10px 20px;
+                            padding: 30px 20px;
+                            border: 2px solid $org;
+                            border-radius: 10px;
+
+                            @media (max-width:1140px) {
+                                margin: 10px 0;
+                            }
+
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                    }
+
+                    .myBtn {
+                        margin-top: 30px;
+                        background-color: $org;
+                        color: $dark;
+                        padding: 20px 50px;
+                        border-radius: 20px;
+                        font-size: 20px;
+                        font-weight: 600;
+                        transition: all .5s ease-in-out;
+                        outline: none;
+                        border: 1px solid $org;
+                        text-transform: uppercase;
+            
+                        &:hover {
+                            background-color: $white;
+                            border: 1px solid $org;
+                            color: $org;
+            
+                            box-shadow:
+                                0px 5px 10px rgba(218, 127, 52, 0.788),
+                                0px 15px 40px rgba(204, 141, 23, 0.842);
+                        }
+            
+                        @media(max-width:1140px) {
+                            font-size: 20px;
+                            padding: 15px 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     .services-page {
         margin-bottom: 100px;

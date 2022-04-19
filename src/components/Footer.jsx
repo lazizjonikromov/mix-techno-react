@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-  
+
             <div className="footer">
                 <div className="container">
                     <div className="row d-flex justify-content-center">
@@ -21,16 +21,16 @@ const Footer = () => {
                                 </a>
                             </div>
                             <ul>
-                                <li><a href="#">Контакты</a></li>
-                                <li><a href="#">Обратная связь</a></li>
-                                <li><a href="#">Правила</a></li>
+                                <li><a href="/">ГЛАВНАЯ</a></li>
+                                <li><a href="/services">НАШИ УСЛУГИ</a></li>
+                                <li><a href="/">ПОРТФОЛИО</a></li>
                             </ul>
                         </div>
                         <div className="zed col-lg-5 d-flex flex-column footer-two-section">
                             <h2>Получить информацию</h2>
                             <div className="footer-input">
                                 <form action="" className='d-flex'>
-                                    <input type="number"  id='phone'  className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
+                                    <input type="number" id='phone' className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
                                     <label htmlFor="phone">+998 </label>
                                     <button type='submit' className='btn'>
                                         Отправить
@@ -38,8 +38,8 @@ const Footer = () => {
                                 </form>
                             </div>
                             <ul>
-                                <li><a href="">Как добраться</a></li>
-                                <li><a href="">Реклама</a></li>
+                                <li><a href="/about">О КОМПАНИИ</a></li>
+                                <li><a href="/contact">КОНТАКТЫ</a></li>
                             </ul>
                         </div>
                         <div className="zed col-lg-3 d-flex flex-column footer-three">
@@ -47,11 +47,15 @@ const Footer = () => {
                             <div className="phone-call">
                                 <div className="">
                                     <img src="./image/phone.png" alt="" />
-                                    <a href="tel:+998946408356">+998 (94) 640-83-56</a>
+                                    <a href="tel:+998946408356">+998 (90) 125-56-96</a>
                                 </div>
                                 <div className="mt-4">
                                     <img src="./image/phone.png" alt="" />
-                                    <a href="tel:+998946408356">+998 (94) 640-83-56</a>
+                                    <a href="tel:+998946408356">+998 (90) 972-41-99</a>
+                                </div>
+                                <div className="mt-4">
+                                    <img src="./image/phone.png" alt="" />
+                                    <a href="tel:+998946408356">+998 (99) 817-35-08</a>
                                 </div>
                             </div>
                             <div className="location-footer mt-4">

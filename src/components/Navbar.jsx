@@ -48,11 +48,11 @@ const Navbar = () => {
                                     <Link onClick={() => setBurger(false)} to='/about' className='nav-text'> О КОМПАНИИ </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='' className='nav-text'> КОНТАКТЫ </Link>
+                                    <Link onClick={() => setBurger(false)} to='/contact' className='nav-text'> КОНТАКТЫ </Link>
                                 </li>
 
                                 <a href="tel: +998946408356" className="myBtn text-uppercase">
-                                    +998 (94) 640-83-56
+                                    +998 (90) 125-56-96
                                 </a>
 
                             </ul>

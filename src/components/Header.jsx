@@ -13,7 +13,7 @@ const Header = () => {
                             <h3>
                                 ВДОХНОВЕНИЕ ВОПЛОЩЁННОЕ В РЕАЛЬНОСТЬ
                             </h3>
-                            <a href="" className="myBtn">
+                            <a href="/send-contact" className="myBtn">
                                 Оставить Заявку
                             </a>
                         </div>

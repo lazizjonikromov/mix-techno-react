@@ -14,8 +14,8 @@ const Montaj = () => {
                             </div>
 
                             <div className="d-flex justify-content-center align-items-center myBtns">
-                                <a href="/" className='myBtn'>Наши услуги</a>
-                                <a href="/" className='myBtn'>Оставить Заявку</a>
+                                <a href="/services" className='myBtn'>Наши услуги</a>
+                                <a href="/send-contact" className='myBtn'>Оставить Заявку</a>
                             </div> 
                         </div>
                     </div>

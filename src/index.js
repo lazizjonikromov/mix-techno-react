@@ -23,6 +23,8 @@ import Service3 from "./pages/Service3";
 import Service4 from "./pages/Service4";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./pages/Services";
+import Contact from "./components/Contact";
+import Send from "./components/Send";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -36,6 +38,8 @@ ReactDOM.render(
       <Route path="/service-3" exact component={Service4} />
       <Route path="/about" exact component={About} />
       <Route path="/services" exact component={Services} />
+      <Route path="/contact" exact component={Contact} />
+      <Route path="/send-contact" exact component={Send} />
     </Switch>
     <Footer />
   </BrowserRouter>,
