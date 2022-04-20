@@ -9,9 +9,8 @@ const Service2 = () => {
         
                 </div>
 
-                <Services />
 
-                <div className="service-main-02">
+                <div className="service-main-02 mt-5">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
@@ -53,7 +52,12 @@ const Service2 = () => {
                         
                     </div>
                 </div>
+
+            <Services />
+
             </div>
+
+            
         </>
     )
 }

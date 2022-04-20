@@ -9,9 +9,8 @@ const Service1 = () => {
           {/* scss bg-img */}
         </div>
 
-        <Services />
 
-        <div className="service-main-01">
+        <div className="service-main-01 mt-5">
           <div className="container">
             <div className="row">
               <div className="col-12">  
@@ -45,6 +44,7 @@ const Service1 = () => {
           </div>
         </div>
 
+        <Services />
 
 
 

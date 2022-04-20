@@ -704,7 +704,7 @@ body {
     .montaj {
         padding: 0 0 120px 0;
 
-        background-image: url('../image/man-woman-factory.png');
+        background-image: url('../image/man-woman-factory.jpg');
         background-repeat: no-repeat;
         width: 100%;
         height: 600px;
@@ -1358,7 +1358,7 @@ body {
     .remont-kranov {
 
         .service-header {
-            background-image: url('../image/service-header-01.png');
+            background-image: url('../image/contact-headerr.jpg');
             background-repeat: no-repeat;
             background-size: 100% 700px;
             background-attachment: fixed;
@@ -1454,13 +1454,13 @@ body {
         margin-bottom: 100px;
 
         .service-03-header {
-            background-image: url('../image/service-header-03.png');
+            background-image: url('../image/service-header-03.jpg');
             background-repeat: no-repeat;
-            background-size: 100% 700px;
+            background-size: 100% 500px;
             background-attachment: fixed;
             text-align: center;
             height: 50vh;
-            padding-top: 250px;
+            padding-top: 200px;
             padding-bottom: 200px;
             position: relative;
             margin-top: 60px;
@@ -1527,7 +1527,7 @@ body {
         margin-bottom: 100px;
 
         .service-04-header {
-            background-image: url('../image/service-header-04.png');
+            background-image: url('../image/contact-headerr.png');
             background-repeat: no-repeat;
             background-size: 100% 700px;
             background-attachment: fixed;
@@ -1547,16 +1547,28 @@ body {
 
     .about {
         .header {
-            background-image: url('../image/about-header.png');
+            background-image: url('../image/about-header.jpg');
             background-repeat: no-repeat;
-            background-size: 100% 600px;
+            background-size: 100% 700px;
             background-attachment: fixed;
-            height: 60vh;
-            padding-top: 150px;
+            height: 50vh;
+            padding-top: 200px;
             padding-bottom: 200px;
             position: relative;
             margin-top: 60px;
             z-index: 1;
+
+            @media (max-width:1140px) {
+                background-size: 130% 600px;
+            }
+
+            @media (max-width:992px) {
+                background-size: 200% 600px;
+            }
+
+            @media (max-width:767px) {
+                background-size: 200% 600px;
+            }
         }
 
         .about-main {
@@ -1623,7 +1635,7 @@ body {
 
     .contact {
         .header {
-            background-image: url('../image/contact-header.png');
+            background-image: url('../image/contact-header.webp');
             background-repeat: no-repeat;
             background-size: 100% 700px;
             background-attachment: fixed;
@@ -1633,6 +1645,18 @@ body {
             position: relative;
             margin-top: 60px;
             z-index: 1;
+
+            @media (max-width:1140px) {
+                background-size: 130% 600px;
+            }
+
+            @media (max-width:992px) {
+                background-size: 200% 600px;
+            }
+
+            @media (max-width:767px) {
+                background-size: 200% 600px;
+            }
         }
 
         .contact-main {
@@ -1840,7 +1864,7 @@ body {
         margin-bottom: 100px;
 
         .service-page-header {
-            background-image: url('../image/services-page-header.png');
+            background-image: url('../image/services-page-header.jpg');
             background-repeat: no-repeat;
             background-size: 100% 700px;
             background-attachment: fixed;
@@ -1872,10 +1896,20 @@ body {
                 ul {
                     display: flex;
                     flex-direction: column;
+                    border: none;
+                   
 
                     li {
-                        padding: 15px 0px 15px 15px;
-                        border-bottom: 1px dashed $dark;
+                        padding: 15px 0px 15px 0px;  
+                        cursor: pointer;
+                        
+                        .nav-link{
+                            background: transparent;
+                            padding: 15px 15px 15px 15px;
+                            &.active{
+                                color: $white;
+                            }
+                        }
 
                         a {
                             color: $dark;
@@ -2009,6 +2043,8 @@ body {
 
                 .section-02 {
                     margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
 
                     .section-02-1 {
                         display: flex;

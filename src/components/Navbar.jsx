@@ -20,7 +20,7 @@ const Navbar = () => {
                     <div className={`row align-items-center `}>
                         {/* Burger */}
 
-                        <div className="col-lg-1 col-4">
+                        <div className="col-lg-1 col-3">
                             <Link to="/">
                                 <img src="./image/logo.svg" alt="" className='logo' />
                             </Link>
