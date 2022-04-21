@@ -4,6 +4,18 @@ const Header = () => {
     return (
         <>
             <div className="header">
+                <video className='video'
+                    autoPlay
+                    loop
+                    playsInLine
+                    muted >
+                    <source
+                        src="/image/bg-header.mp4"
+                        type="video/mp4"
+                        id="bgvid"
+                    />
+                </video>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-12 zed" >
@@ -20,8 +32,9 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="blur"></div>
+                {/* <div className="blur"></div> */}
             </div>
+
         </>
     )
 }

@@ -21,7 +21,14 @@ const Services = () => {
 
                 <div className="service-page-main">
                     <div className="container">
-                        <div className="row">
+                        <div className="row position-relative">
+                            <div className="col-12 text-center mb-5">
+                                <h2>НАШИ УСЛУГИ</h2>
+                                <div className="img"><img src="/image/service1.png" alt="" /></div>
+                            </div>
+                        </div>
+
+                        <div className="row mt-5">
                             <div className="col-12">
 
 
@@ -349,16 +356,18 @@ const Services = () => {
                                                     <div className="right">
                                                         <Swiper
                                                             spaceBetween={30}
-                                                            effect={"fade"}
                                                             navigation={true}
                                                             loop={true}
-                                                            modules={[Autoplay, EffectFade, Navigation]}
+                                                            modules={[Autoplay, Navigation]}
                                                             autoplay={{
                                                                 delay: 3000,
                                                                 disableOnInteraction: false,
                                                             }}
                                                             className="mySwiper"
                                                         >
+                                                            <SwiperSlide>
+                                                                <img src="/image/kreslo-00.jpg" className='w-100' />
+                                                            </SwiperSlide>
                                                             <SwiperSlide>
                                                                 <img src="/image/kreslo-01.jpg" className='w-100' />
                                                             </SwiperSlide>
@@ -584,7 +593,7 @@ const Services = () => {
 
                                             <h1 className='mt-5'>Порядок работ</h1>
                                             <p className='mt-3'>При переводе кранов на радиоуправление мы придерживаемся следующего порядка работ:
-                                                                <br /><br />
+                                                <br /><br />
                                                 Обследование оборудования и подготовка проектной документации. <br /><br />
                                                 Согласование с заказчиком спецификации оборудования. <br /><br />
                                                 Согласование условий и сроков проведения работ. <br /><br />

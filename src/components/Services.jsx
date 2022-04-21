@@ -15,6 +15,10 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="row services-bt">
+                        <div className="top-sphere">
+                            <div></div>
+                        </div>
+                        
                         <div className="col-12">
 
                             <Swiper
@@ -111,7 +115,9 @@ const Services = () => {
                             </Swiper>
                         </div>
 
-
+                        <div className="bottom-sphere">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>

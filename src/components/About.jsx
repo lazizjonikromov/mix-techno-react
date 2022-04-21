@@ -12,7 +12,7 @@ const About = () => {
                     <div className="container">
                         <div className="row position-relative">
                             <div className="col-12 text-center">
-                                <h2>О компании</h2>
+                                <h2>О КОМПАНИИ</h2>
                                 <div className="img"><img src="/image/about.png" alt="" /></div>
                             </div>
                         </div>

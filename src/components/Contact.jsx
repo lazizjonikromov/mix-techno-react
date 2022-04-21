@@ -10,9 +10,16 @@ const Contact = () => {
 
                 <div className="contact-main">
                     <div className="container">
-                        <div className="row">
+                        <div className="row position-relative">
+                            <div className="col-12 text-center mb-5">
+                                <h2>КОНТАКТЫ</h2>
+                                <div className="img"><img src="/image/contact.png" alt="" /></div>
+                            </div>
+                        </div>
+
+                        <div className="row mt-5">
                             <div className="col-12 map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.7354827754243!2d69.24301835118635!3d41.27109497917322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a861acf7eab%3A0x2a483b5df56482d3!2zMTgg0YPQu9C40YbQsCDQmtGD0YjQsdC10LPQuCwg0KLQsNGI0LrQtdC90YIgMTAwMDIyLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1650360998815!5m2!1sru!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.7354827754243!2d69.24301835118635!3d41.27109497917322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a861acf7eab%3A0x2a483b5df56482d3!2zMTgg0YPQu9C40YbQsCDQmtGD0YjQsdC10LPQuCwg0KLQsNGI0LrQtdC90YIgMTAwMDIyLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sus!4v1650360998815!5m2!1sru!2sus" width="600" height="450"  loading="lazy"></iframe>
                             </div>
                         </div>
 
@@ -20,7 +27,7 @@ const Contact = () => {
                             <div className="phone">
                                 <img src="/image/contact-phone.png" alt="" />
                                 <p>
-                                    +998901255696, 
+                                    +998901255696,
                                     +998909724199, <br />
                                     +998998173508
                                 </p>
