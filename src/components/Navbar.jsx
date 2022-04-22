@@ -42,7 +42,7 @@ const Navbar = () => {
                                     <Link onClick={() => setBurger(false)} to='/services' className='nav-text'> НАШИ УСЛУГИ </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='' className='nav-text'> ПОРТФОЛИО </Link>
+                                    <Link onClick={() => setBurger(false)} to='/portfolio' className='nav-text'> ПОРТФОЛИО </Link>
                                 </li>
                                 <li>
                                     <Link onClick={() => setBurger(false)} to='/about' className='nav-text'> О КОМПАНИИ </Link>

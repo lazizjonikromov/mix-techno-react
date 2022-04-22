@@ -25,6 +25,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Services from "./pages/Services";
 import Contact from "./components/Contact";
 import Send from "./components/Send";
+import Portfolio from "./components/Portfolio";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -38,6 +39,7 @@ ReactDOM.render(
       <Route path="/service-3" exact component={Service4} />
       <Route path="/about" exact component={About} />
       <Route path="/services" exact component={Services} />
+      <Route path="/portfolio" exact component={Portfolio} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/send-contact" exact component={Send} />
     </Switch>
