@@ -4,17 +4,21 @@ const Portfolio = () => {
     return (
         <>
             <div className="portfolio">
+                
                 <div className="header">
                     <div className="container">
                         <div className="row header-text">
-                            <h1>OOO ‘MIX TECHNO HYDRAULICS’</h1>
+                            <div className="col-12">
+                                <h1>OOO ‘MIX TECHNO HYDRAULICS’</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="section-01">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-01-text">
-                            <h3>ООО «MIX TECHNO HYDRAULICS» приветствует Вас и в вашем лице
+                            <h3>ООО <span>«MIX TECHNO HYDRAULICS»</span> приветствует Вас и в вашем лице
                                 коллектив!
                             </h3>
                             <ul>
@@ -23,12 +27,12 @@ const Portfolio = () => {
                                     местных квалифицированных инженеров. Эти три года были для нас сложными, но продуктивными, мы сделали
                                     силами своих специалистов несколько интересных проектов, поставок оборудования с последующей наладкой. В
                                     сферах насосных станций перекачки воды и стоков, гидравлических прессах и грузоподъемных механизмах.
-                                </li>
+                                </li><br />
                                 <li>
                                     Оглядываясь назад, вспоминаем, как в сложных переговорах приходилось убеждать коллег в необходимости
                                     проведения модернизационных работ. Сегодня же, мы можем показать наши работы, а Вы услышать отзывы о
                                     сделанном.
-                                </li>
+                                </li><br />
                                 <li>
                                     Результат: Предприятия экономят свои средства на уменьшении эксплуатационных расходов, на уменьшении
                                     потребления электроэнергии, на уменьшении постоянных расходов запасных частей и уменьшении аварийности.
@@ -38,6 +42,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-02">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-02-main">
                             <p>
@@ -46,8 +51,8 @@ const Portfolio = () => {
                                 С момента основания компании и по сей день, виден устойчивый рост производства и внедрения в
                                 рынок мировой автоматизации, компания устойчиво входит в мировой индекс устойчивости Доуджонса (DJSI world).
                             </p>
-                            <div className="col-12 d-flex">
-                                <div className="col-lg-6">
+                            <div className="col-12 d-flex mt-5 bottom">
+                                <div className="col-lg-6 left">
                                     <p>Миссия компании - «создавать инновационные,
                                         энергоэффективные и экологически чистые решения для
                                         повышения качества жизни».
@@ -58,7 +63,7 @@ const Portfolio = () => {
                                         Choice и Taiwan Excellence.
                                     </p>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 right">
                                     <img src="/image/section-02-main.png" alt="" className='w-100' />
                                 </div>
                             </div>
@@ -91,20 +96,20 @@ const Portfolio = () => {
                 </div>
                 <div className="section-04">
                     <div className="container">
-                        <div className="row section-04-main d-flex">
+                        <div className="row section-04-main d-flex align-items-center">
                             <div className="col-lg-6 left d-flex flex-column">
                                 <div className="top">
                                     <h3>1. Частотные преобразователи</h3>
-                                    <img src="/image/section-04-main-01.png" alt="" />
+                                    <img src="/image/section-04-main-01.png" alt="" className='w-100' />
                                 </div>
                                 <div className="bottom">
                                     <h3>2. Модули рекуперации энергии</h3>
-                                    <img src="/image/section-04-main-02.png" alt="" />
+                                    <img src="/image/section-04-main-02.png" alt="" className='w-100' />
                                 </div>
                             </div>
                             <div className="col-lg-6 right">
                                 <h3>3. Программируемые логические контроллеры</h3>
-                                <img src="/image/section-04-main-03.png" alt="" />
+                                <img src="/image/section-04-main-03.png" alt="" className='w-100' />
                             </div>
                         </div>
                     </div>
@@ -126,7 +131,7 @@ const Portfolio = () => {
                             <h2>Пример системы управления мостового электрического Працен-крана</h2>
                             <div className="col-12 main d-flex">
                                 <div className="col-lg-6 left">
-                                    <div className="left-01">
+                                    <div className="left-01 d-flex align-items-center">
                                         <img src="/image/section-06-main-01.png" alt="" />
                                         <h3>Описание системы:</h3>
                                     </div>
@@ -135,12 +140,12 @@ const Portfolio = () => {
                                             Грузоподъемный механизм рассчитан на тяжёлый режим работы в температурной среде превышающей +40°С, и имеет большую производительность благодаря высоким скоростям передвижения. Тележка выполнена поворотной, что позволяет укладывать прокат как вдоль, так и поперёк цеха. При этом траверса с лапами крепится к двум жёстким направляющим, предотвращающим раскачивание траверсы при разгоне. Кроме того кран укомплектован грузоподъемными магнитами.
                                         </p>
                                     </div>
-                                    <div className="left-03">
-                                        <img src="/image/section-06-main-03.jpg" alt="" />
+                                    <div className="left-03 d-flex justify-content-center">
+                                        <img src="/image/section-06-main-03.jpg" alt="" className='w-50' />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 right">
-                                    <div className="right-01">
+                                    <div className="right-01 d-flex align-items-center">
                                         <img src="/image/section-06-main-02.png" alt="" />
                                         <h3>Цели внедрения системы:</h3>
                                     </div>
@@ -155,8 +160,8 @@ const Portfolio = () => {
                                             Обеспечение быстрой диагностики неисправностей.
                                         </p>
                                     </div>
-                                    <div className="right-03">
-                                        <img src="/image/section-06-main-04.jpg" alt="" />
+                                    <div className="right-03 d-flex justify-content-center">
+                                        <img src="/image/section-06-main-04.png" alt="" className='w-50' />
                                     </div>
                                 </div>
                             </div>
@@ -165,7 +170,126 @@ const Portfolio = () => {
                 </div>
                 <div className="section-07">
                     <div className="container">
-                        
+                        <div className="row section-07-text d-flex">
+                            <div className="col-lg-6 left">
+                                <h3>Предлагаемое оборудование системы управления: </h3>
+                                <p>Основное оборудование системы управления (СУ) размещается на пяти панелях в электро-помещении на мосту крана. СУ осуществляет общее управление краном, скоростью и направлением вращения валов асинхронных электродвигателей с короткозамкнутым ротором. Управление скоростью осуществляется путем одновременного изменения частоты и напряжения на зажимах электродвигателей механизмов, управление направлением вращения – изменением порядка чередования фаз указанного напряжения. Управление скоростью осуществляют инвертора. Инвертора питаются от активного сетевого модуля питания по шине.
+                                    Торможение механизмов крана производится путём перевода двигателей из двигательного режима в генераторный. Вырабатываемая таким образом избыточная энергия возвращается в сеть активным сетевым модулем питания-рекуперации. В случае невозможности возврата энергии в сеть, она автоматически рассеивается с помощью тормозного модуля на резистор.
+                                </p>
+                            </div>
+                            <div className="col-lg-6 right">
+                                <h3>Программируемый контроллер –выполняет следующие функции:</h3>
+                                <p>обработка алгоритмов управления краном;
+                                    формирование сигналов задания скорости для приводов;
+                                    обеспечение коммуникаций с блоками управления, панелью оператора и станцией распределенного ввода-вывода по протоколу PROFIBUS DP;
+                                    обработка сигналов от аппаратов управления (командоаппаратов, переключателей, кнопок), аппаратов безопасности и ограничения движения, аварийных сигналов и сигналов блокировок;
+                                    управление коммутационной аппаратурой;
+                                    диагностика состояний СУ;
+                                    сохранение статистических данных.
+                                    Все электрические аппараты СУ защищены плавкими вставками либо автоматическими выключателями. При срабатывании этих элементов защиты на операторской панели появится соответствующее сообщение.
+                                    Защиту электродвигателей и контроль за их температурой осуществляют инвертора и модули. В случае возникновения аварии, на операторской панели появится соответствующее сообщение.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-08">
+                    <div className="container">
+                        <div className="col-12 text-center">
+                            <h2>Выполненные и разработанные проекты специалистами WESMART </h2>
+                        </div>
+                        <div className="row section-08-main d-flex">
+                            <div className="col-lg-4">
+                                <img src="/image/section-08-main-01.png" alt="" className='w-100' />
+                                <h3>
+                                    Модернизация электрооборудования и автоматизация роликовой нагревательной печи.
+                                    АО Узметкамбинат
+                                </h3>
+                            </div>
+                            <div className="col-lg-4">
+                                <img src="/image/section-08-main-02.png" alt="" className='w-100' />
+                                <h3>
+                                    Модернизация электро-оборудываемого мостового крана
+                                    Заказчик: АО Узметкамбинат
+                                </h3>
+                            </div>
+                            <div className="col-lg-4">
+                                <img src="/image/section-08-main-03.png" alt="" className='w-100' />
+                                <h3>
+                                    Разработана и в процессе внедрения:
+                                    Автоматизация и диспетчеризация систем водоснабжения.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-09">
+                    <div className="container">
+                        <div className="col-12 text-center">
+                            <h2>
+                                Выполненные и разработанные проекты от WESMART
+                            </h2>
+                        </div>
+                        <div className="row section-09-main d-flex">
+                            <div className="col-lg-4">
+                                <img src="/image/section-09-main-01.png" alt="" className='w-100' />
+                                <h3>
+                                    Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн.
+                                    АО “Алмалыкский ГМК
+                                </h3>
+                            </div>
+                            <div className="col-lg-4">
+                                <img src="/image/section-09-main-02.png" alt="" className='w-100' />
+                                <h3>
+                                    Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном
+                                    Заказчик: АО Узметкамбинат
+                                </h3>
+                            </div>
+                            <div className="col-lg-4">
+                                <img src="/image/section-09-main-03.png" alt="" className='w-100' />
+                                <h3>
+                                    Модернизация и автоматизация пресса для металла и отходов
+                                    Ташкент  Вторчермет
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-10">
+                    <div className="bg-images d-flex flex-column">
+                        <div className="top d-flex">
+                            <img src="/image/section-10-main-01.jpg" alt="" className='w-50' />
+                            <img src="/image/section-10-main-02.jpg" alt="" className='w-50' />
+                        </div>
+                        <div className="bottom d-flex">
+                            <img src="/image/section-10-main-03.jpg" alt="" className='w-50' />
+                            <img src="/image/section-10-main-04.jpg" alt="" className='w-50' />
+                        </div>
+                    </div>
+                    <div className="container">
+                        <div className="row section-10-main d-flex justify-content-center">
+                            <div className="top-text d-flex justify-content-between col-12">
+                                <h3>
+                                    Ремонт и техническое обслуживание преобразователей частоты и ИБП
+                                </h3>
+                                <h3>
+                                    Инженерные решения в области АСУТП и КИПиА
+                                </h3>
+                            </div>
+                            <div className="middle-text">
+                                <h1>
+                                    Основные отрасли
+                                </h1>
+                            </div>
+                            <div className="bottom-text d-flex justify-content-between col-12">
+                                <h3>
+                                    Поставка и пусконаладка промышленного оборудования
+                                </h3>
+                                <h3>
+                                    Инженерные решения в области электро-энергетики
+                                </h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

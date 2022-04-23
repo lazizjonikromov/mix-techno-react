@@ -1656,7 +1656,7 @@ body {
         .header {
             background-image: url('../image/about-header.jpg');
             background-repeat: no-repeat;
-            background-size: 100% 700px;
+            background-size: 100% 600px;
             background-attachment: fixed;
             height: 50vh;
             padding-top: 200px;
@@ -1744,7 +1744,7 @@ body {
         .header {
             background-image: url('../image/contact-header.webp');
             background-repeat: no-repeat;
-            background-size: 100% 700px;
+            background-size: 100% 600px;
             background-attachment: fixed;
             height: 50vh;
             padding-top: 200px;
@@ -1816,6 +1816,7 @@ body {
                     width: 90%;
                     border: 1px solid $org;
                     border-radius: 20px;
+
                     @media (max-width:992px) {
                         width: 100%;
                     }
@@ -2369,6 +2370,158 @@ body {
 
             }
         }
+
+
+    }
+
+
+
+    .portfolio {
+
+
+        .header {
+            background-image: url('../image/portfolio-header.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            background-attachment: fixed;
+            text-align: center;
+            height: 50vh;
+            padding-top: 250px;
+            padding-bottom: 200px;
+            position: relative;
+            margin-top: 65px;
+            z-index: 99;
+
+
+            @media (max-width:1140px) {
+                background-size: 130% 600px;
+            }
+
+            @media (max-width:992px) {
+                background-size: 200% 600px;
+            }
+
+            @media (max-width:767px) {
+                background-size: 200% 600px;
+            }
+
+            .header-text {
+
+                h1 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .section-01 {
+            background-image: url('../image/section-01-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            height: 60vh;
+            padding-top: 80px;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            margin-top: 20px;
+
+
+            .blur {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #646161b4;
+                height: 60vh;
+                backdrop-filter: blur(1px);
+                z-index: 11;
+
+            }
+
+            .section-01-text {
+                color: $white;
+                display: flex;
+                justify-content: center;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    width: 70%;
+                    text-align: center;
+                    z-index: 12;
+
+                    span {
+                        font-weight: 900;
+                        color: $org;
+                    }
+                }
+
+                ul {
+                    z-index: 12;
+                    margin-top: 20px;
+
+                    li {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+
+        }
+
+        .section-02 {
+            background-image: url('../image/section-02-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+            height: 60vh;
+            padding-top: 80px;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            margin-top: 20px;
+
+            .blur {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #646161b4;
+                height: 60vh;
+                backdrop-filter: blur(1px);
+                z-index: 11;
+
+            }
+
+            .section-02-main {
+                z-index: 12;
+
+                p {
+                    font-size: 20px;
+                    z-index: 12;
+
+                }
+
+                .bottom{
+                    @media (max-width:992px) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .left {
+                        z-index: 12;
+                    }
+    
+                    .right {
+                        z-index: 12;
+                    }
+                }
+               
+            }
+
+
+        }
+
+
 
 
     }
