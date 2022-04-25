@@ -4,7 +4,7 @@ const Portfolio = () => {
     return (
         <>
             <div className="portfolio">
-                
+
                 <div className="header">
                     <div className="container">
                         <div className="row header-text">
@@ -71,18 +71,19 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-03">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-03-text">
                             <p>Специалисты компании ООО «WESMART» не останавливается на достигнутом, проходят курсы повышения
                                 квалификации и готовы предложить разные решения по промышленной автоматизации.</p>
                             <br />
                             <p>
-                                Наше предложение включает:
-                                Приводы.
-                                Контроллеры.
-                                Системы управления движением.
-                                Датчики.
-                                Коммуникационные устройства и программное обеспечение для машиностроения.
+                                Наше предложение включает : <br />
+                                Приводы. <br />
+                                Контроллеры. <br />
+                                Системы управления движением. <br />
+                                Датчики. <br />
+                                Коммуникационные устройства и программное обеспечение для машиностроения. <br /><br />
                             </p>
                             <br /><br />
                             <p>также поставляем энергосберегающие решения, приводные системы, решения для
@@ -95,30 +96,32 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-04">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-04-main d-flex align-items-center">
                             <div className="col-lg-6 left d-flex flex-column">
-                                <div className="top">
+                                <div className="top mt-3">
                                     <h3>1. Частотные преобразователи</h3>
-                                    <img src="/image/section-04-main-01.png" alt="" className='w-100' />
+                                    <img src="/image/section-04-main-01.png" alt="" className='w-100 mt-4' />
                                 </div>
-                                <div className="bottom">
+                                <div className="bottom mt-5">
                                     <h3>2. Модули рекуперации энергии</h3>
-                                    <img src="/image/section-04-main-02.png" alt="" className='w-100' />
+                                    <img src="/image/section-04-main-02.png" alt="" className='w-100 mt-4' />
                                 </div>
                             </div>
-                            <div className="col-lg-6 right">
+                            <div className="col-lg-6 right mt-5">
                                 <h3>3. Программируемые логические контроллеры</h3>
-                                <img src="/image/section-04-main-03.png" alt="" className='w-100' />
+                                <img src="/image/section-04-main-03.png" alt="" className='w-100 mt-4' />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="section-05">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-05-text">
                             <h2>
-                                Компания ООО «MIX TECHNO HYDRAULICS» является партнером Delta Electronics в Узбекистане. Поставляет оборудование и инженерные решения в Республике Узбекистан, имеет возможность проводить шеф монтаж, наладку оборудования на Ваших площадках. Так
+                                Компания ООО <span>«MIX TECHNO HYDRAULICS»</span> является партнером Delta Electronics в Узбекистане. Поставляет оборудование и инженерные решения в Республике Узбекистан, имеет возможность проводить шеф монтаж, наладку оборудования на Ваших площадках. Так
                                 же ведем сервисное обслуживание и даем гарантии на
                                 оборудование.
                             </h2>
@@ -126,6 +129,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-06">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-06-main">
                             <h2>Пример системы управления мостового электрического Працен-крана</h2>
@@ -140,8 +144,8 @@ const Portfolio = () => {
                                             Грузоподъемный механизм рассчитан на тяжёлый режим работы в температурной среде превышающей +40°С, и имеет большую производительность благодаря высоким скоростям передвижения. Тележка выполнена поворотной, что позволяет укладывать прокат как вдоль, так и поперёк цеха. При этом траверса с лапами крепится к двум жёстким направляющим, предотвращающим раскачивание траверсы при разгоне. Кроме того кран укомплектован грузоподъемными магнитами.
                                         </p>
                                     </div>
-                                    <div className="left-03 d-flex justify-content-center">
-                                        <img src="/image/section-06-main-03.jpg" alt="" className='w-50' />
+                                    <div className="left-03 d-flex justify-content-center mt-5 mr-5">
+                                        <img src="/image/section-06-main-03.jpg" alt="" className='w-80' />
                                     </div>
                                 </div>
                                 <div className="col-lg-6 right">
@@ -160,8 +164,8 @@ const Portfolio = () => {
                                             Обеспечение быстрой диагностики неисправностей.
                                         </p>
                                     </div>
-                                    <div className="right-03 d-flex justify-content-center">
-                                        <img src="/image/section-06-main-04.png" alt="" className='w-50' />
+                                    <div className="right-03 d-flex justify-content-center mt-5">
+                                        <img src="/image/section-06-main-04.png" alt="" className='w-80' />
                                     </div>
                                 </div>
                             </div>
@@ -169,6 +173,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-07">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row section-07-text d-flex">
                             <div className="col-lg-6 left">
@@ -194,63 +199,65 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="section-08">
+                    <div className="blur"></div>
                     <div className="container">
-                        <div className="col-12 text-center">
-                            <h2>Выполненные и разработанные проекты специалистами WESMART </h2>
+                        <div className="col-12 text-center text">
+                            <h2>Выполненные и разработанные проекты специалистами <br /> <span>MIX TECHNO HYDRAULICS</span> </h2>
                         </div>
                         <div className="row section-08-main d-flex">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-08-main-01.png" alt="" className='w-100' />
-                                <h3>
-                                    Модернизация электрооборудования и автоматизация роликовой нагревательной печи.
+                                <h5>
+                                    Модернизация электрооборудования и автоматизация роликовой нагревательной печи. <br />
                                     АО Узметкамбинат
-                                </h3>
+                                </h5>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-08-main-02.png" alt="" className='w-100' />
-                                <h3>
-                                    Модернизация электро-оборудываемого мостового крана
+                                <h5>
+                                    Модернизация электро-оборудываемого мостового крана<br />
                                     Заказчик: АО Узметкамбинат
-                                </h3>
+                                </h5>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-08-main-03.png" alt="" className='w-100' />
-                                <h3>
-                                    Разработана и в процессе внедрения:
+                                <h5>
+                                    Разработана и в процессе внедрения: <br />
                                     Автоматизация и диспетчеризация систем водоснабжения.
-                                </h3>
+                                </h5>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="section-09">
+                    <div className="blur"></div>
                     <div className="container">
-                        <div className="col-12 text-center">
+                        <div className="col-12 text-center text">
                             <h2>
-                                Выполненные и разработанные проекты от WESMART
+                                Выполненные и разработанные проекты от <br /> <span>MIX TECHNO HYDRAULICS</span>
                             </h2>
                         </div>
                         <div className="row section-09-main d-flex">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-09-main-01.png" alt="" className='w-100' />
-                                <h3>
-                                    Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн.
+                                <h5>
+                                    Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
                                     АО “Алмалыкский ГМК
-                                </h3>
+                                </h5>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-09-main-02.png" alt="" className='w-100' />
-                                <h3>
-                                    Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном
+                                <h5>
+                                    Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
                                     Заказчик: АО Узметкамбинат
-                                </h3>
+                                </h5>
                             </div>
-                            <div className="col-lg-4">
-                                <img src="/image/section-09-main-03.png" alt="" className='w-100' />
-                                <h3>
-                                    Модернизация и автоматизация пресса для металла и отходов
+                            <div className="col-lg-4 cart">
+                                <img src="/image/section-09-main-03.png" alt="" className='w-100 img3' />
+                                <h5>
+                                    Модернизация и автоматизация пресса для металла и отходов <br />
                                     Ташкент  Вторчермет
-                                </h3>
+                                </h5>
                             </div>
                         </div>
                     </div>
@@ -258,39 +265,37 @@ const Portfolio = () => {
                 <div className="section-10">
                     <div className="bg-images d-flex flex-column">
                         <div className="top d-flex">
-                            <img src="/image/section-10-main-01.jpg" alt="" className='w-50' />
-                            <img src="/image/section-10-main-02.jpg" alt="" className='w-50' />
+                            <div className="topLeft w-50">
+                                <img src="/image/section-10-main-01.jpg" className='w-100' alt="" />
+                                <h5>Ремонт и техническое обслуживание преобразователей частоты и ИБП</h5>
+                            </div>
+                            <div className="topLeft w-50">
+                                <img src="/image/section-10-main-02.jpg" className='w-100' alt="" />
+                                <h5>Инженерные решения в области АСУТП и КИПиА</h5>
+                            </div>
                         </div>
                         <div className="bottom d-flex">
-                            <img src="/image/section-10-main-03.jpg" alt="" className='w-50' />
-                            <img src="/image/section-10-main-04.jpg" alt="" className='w-50' />
+                            <div className="topLeft w-50">
+                                <img src="/image/section-10-main-03.jpg" className='w-100' alt="" />
+                                <h5>Поставка и пусконаладка промышленного оборудования</h5>
+                            </div>
+                            <div className="topLeft w-50">
+                                <img src="/image/section-10-main-04.jpg" className='w-100' alt="" />
+                                <h5>Инженерные решения в области электро-энергетики</h5>
+                            </div>
                         </div>
+
+                        <h3>Основные отрасли</h3>
                     </div>
+                </div>
+                <div className="section-11">
+                    <div className="blur"></div>
                     <div className="container">
-                        <div className="row section-10-main d-flex justify-content-center">
-                            <div className="top-text d-flex justify-content-between col-12">
-                                <h3>
-                                    Ремонт и техническое обслуживание преобразователей частоты и ИБП
-                                </h3>
-                                <h3>
-                                    Инженерные решения в области АСУТП и КИПиА
-                                </h3>
-                            </div>
-                            <div className="middle-text">
-                                <h1>
-                                    Основные отрасли
-                                </h1>
-                            </div>
-                            <div className="bottom-text d-flex justify-content-between col-12">
-                                <h3>
-                                    Поставка и пусконаладка промышленного оборудования
-                                </h3>
-                                <h3>
-                                    Инженерные решения в области электро-энергетики
-                                </h3>
-                            </div>
+                        <div className="row section-11-main">
+                            <h2>Мы уверенны в своих силах, хотим быть полезными во благо Узбекистана и вашего предприятия.</h2>
+                            <h1>OOO ‘MIX TECHNO HYDRAULICS’</h1>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </>
