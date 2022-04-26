@@ -7,7 +7,7 @@ const Header = () => {
                 <video className='video'
                     autoPlay
                     loop
-                    playsInLine
+                    playsInline
                     muted >
                     <source
                         src="/image/bg-header.mp4"

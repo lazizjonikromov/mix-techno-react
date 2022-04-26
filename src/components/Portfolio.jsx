@@ -51,7 +51,7 @@ const Portfolio = () => {
                                 С момента основания компании и по сей день, виден устойчивый рост производства и внедрения в
                                 рынок мировой автоматизации, компания устойчиво входит в мировой индекс устойчивости Доуджонса (DJSI world).
                             </p>
-                            <div className="col-12 d-flex mt-5 bottom">
+                            <div className="d-flex mt-5 bottom">
                                 <div className="col-lg-6 left">
                                     <p>Миссия компании - «создавать инновационные,
                                         энергоэффективные и экологически чистые решения для
@@ -133,7 +133,7 @@ const Portfolio = () => {
                     <div className="container">
                         <div className="row section-06-main">
                             <h2>Пример системы управления мостового электрического Працен-крана</h2>
-                            <div className="col-12 main d-flex">
+                            <div className="main d-flex">
                                 <div className="col-lg-6 left">
                                     <div className="left-01 d-flex align-items-center">
                                         <img src="/image/section-06-main-01.png" alt="" />
@@ -144,7 +144,7 @@ const Portfolio = () => {
                                             Грузоподъемный механизм рассчитан на тяжёлый режим работы в температурной среде превышающей +40°С, и имеет большую производительность благодаря высоким скоростям передвижения. Тележка выполнена поворотной, что позволяет укладывать прокат как вдоль, так и поперёк цеха. При этом траверса с лапами крепится к двум жёстким направляющим, предотвращающим раскачивание траверсы при разгоне. Кроме того кран укомплектован грузоподъемными магнитами.
                                         </p>
                                     </div>
-                                    <div className="left-03 d-flex justify-content-center mt-5 mr-5">
+                                    <div className="left-03 d-flex justify-content-center mt-5">
                                         <img src="/image/section-06-main-03.jpg" alt="" className='w-80' />
                                     </div>
                                 </div>
