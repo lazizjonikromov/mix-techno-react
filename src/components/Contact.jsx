@@ -5,10 +5,7 @@ const Contact = () => {
         <>
             <div className="contact">
                 <div className="header">
-
-                </div>
-
-                <div className="contact-main">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row position-relative">
                             <div className="col-12 text-center mb-5">
@@ -16,6 +13,11 @@ const Contact = () => {
                                 <div className="img"><img src="/image/contact.png" alt="" /></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="contact-main">
+                    <div className="container">
 
                         <div className="row mt-5">
                             <div className="col-12 map">
