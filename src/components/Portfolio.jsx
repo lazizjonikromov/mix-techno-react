@@ -1,13 +1,6 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos';
+import React from 'react'
 
 const Portfolio = () => {
-
-    useEffect(() => {
-        Aos.init({
-            duration: 1700
-        });
-    }, []);
 
     return (
         <>

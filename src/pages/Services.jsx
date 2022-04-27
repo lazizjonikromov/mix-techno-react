@@ -16,10 +16,7 @@ const Services = () => {
         <>
             <div className="services-page">
                 <div className="service-page-header">
-
-                </div>
-
-                <div className="service-page-main">
+                    <div className="blur"></div>
                     <div className="container">
                         <div className="row position-relative">
                             <div className="col-12 text-center mb-5">
@@ -27,6 +24,12 @@ const Services = () => {
                                 <div className="img"><img src="/image/service1.png" alt="" /></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="service-page-main">
+                    <div className="container">
+
 
                         <div className="row mt-5">
                             <div className="col-12">

@@ -7,15 +7,15 @@ const Montaj = () => {
                 <div className="container">
                     <div className="row">
                         <div className="zed col-12">
-                            <div className="montaj-zed-blur mb-5">
+                            <div data-aos="fade-down" className="montaj-zed-blur mb-5">
                                 <h2>МОДЕРНИЗАЦИЯ И РЕМОНТ ВСЕХ ВИДОВ КРАНОВ</h2>
                                 <h1>ВЫСШЕЕ КАЧЕСТВО СЕРВИСА</h1>
                                 <p>Ввод и вывод из эксплуатации башенных кранов любой сложности</p>
                             </div>
 
                             <div className="d-flex justify-content-center align-items-center myBtns">
-                                <a href="/services" className='myBtn'>Наши услуги</a>
-                                <a href="/send-contact" className='myBtn'>Оставить Заявку</a>
+                                <a data-aos="fade-up-right" href="/services" className='myBtn'>Наши услуги</a>
+                                <a data-aos="fade-up-left" href="/send-contact" className='myBtn'>Оставить Заявку</a>
                             </div> 
                         </div>
                     </div>

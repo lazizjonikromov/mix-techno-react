@@ -6,7 +6,7 @@ const Builder = () => {
             <div className="builder">
                 <div className="container">
                     <div className="row d-flex align-items-center">
-                        <div className="col-lg-6 left">
+                        <div data-aos="fade-right" className="col-lg-6 left">
                             <div className="top-sphere">
                                 <div></div>
                             </div>
@@ -15,7 +15,7 @@ const Builder = () => {
                                 <div></div>
                             </div>
                         </div>
-                        <div className="col-lg-5 ml-auto right d-flex">
+                        <div data-aos="fade-left" className="col-lg-5 ml-auto right d-flex">
                             <p className='right-q'>‘‘</p>
                             <div className="right-r">
                                 <p>
