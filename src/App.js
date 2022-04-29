@@ -6,19 +6,34 @@ import Services from "./components/Services";
 
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
-import Aos from 'aos';
-import { useEffect } from "react";
+import Aos from "aos";
+import { useEffect, useState } from "react";
+import { SpinnerDotted } from "spinners-react";
 
 const App = () => {
+  const [loader, setLoder] = useState(true);
   useEffect(() => {
     Aos.init({
       duration: 1700,
     });
+
+    setTimeout(() => {
+      setLoder(false);
+    }, 2000);
   }, []);
 
   return (
     <>
-      <Header />
+      {loader ? (
+        <div className="loader">
+           <img src="/image/logo.svg" alt="" /> 
+          <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
+        </div>
+      ) : (
+        <>
+          <Header />
+        </>
+      )}
       <Services />
       <Montaj />
       <Builder />

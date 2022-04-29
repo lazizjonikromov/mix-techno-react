@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row } from 'reactstrap';
 import classnames from 'classnames';
 
 import { Autoplay, EffectFade, Navigation } from "swiper";
+import { SpinnerDotted } from 'spinners-react';
 
 const Services = () => {
     const [activeTab, setActiveTab] = useState('1');
@@ -12,8 +13,24 @@ const Services = () => {
     const toggle = tab => {
         if (activeTab !== tab) setActiveTab(tab);
     }
+
+    const [loader, setLoder] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoder(false);
+        }, 2000);
+    }, []);
+
+
     return (
         <>
+            {loader ?
+                <div className="loader">
+                    <img src="/image/logo.svg" alt="" />
+                    <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
+                </div> : ''
+            }
             <div className="services-page">
                 <div className="service-page-header">
                     <div className="blur"></div>

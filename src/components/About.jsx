@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { SpinnerDotted } from 'spinners-react';
 
 const About = () => {
+    const [loader, setLoder] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoder(false);
+        }, 2000);
+    }, []);
     return (
         <>
+            {loader ?
+                <div className="loader">
+                    <img src="/image/logo.svg" alt="" />
+                    <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
+                </div> : ''
+            }
             <div className="about">
                 <div className="header">
                     <div className="blur"></div>

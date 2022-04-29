@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Services from '../components/Services'
+import { SpinnerDotted } from 'spinners-react';
 
 const Service1 = () => {
+  const [loader, setLoder] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoder(false);
+    }, 2000);
+  }, []);
   return (
     <>
+      {loader ?
+        <div className="loader">
+          <img src="/image/logo.svg" alt="" />
+          <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
+        </div> : ''
+      }
       <div className="remont-kranov">
         <div className="service-header">
           {/* scss bg-img */}
@@ -13,7 +27,7 @@ const Service1 = () => {
         <div className="service-main-01 mt-5">
           <div className="container">
             <div className="row">
-              <div className="col-12">  
+              <div className="col-12">
                 <h1>ПОВЫШАЕМ ПРОИЗВОДИТЕЛЬНОСТЬ ТРУДА</h1>
                 <p>
                   <br />
@@ -29,7 +43,7 @@ const Service1 = () => {
                     Модернизация управления кранами с помощью преобразователей частоты
                   </h2>
                   <h2>
-                  Плановый ремонт грузоподъемных кранов
+                    Плановый ремонт грузоподъемных кранов
                   </h2>
                   <h2>
                     Аварийный ремонт

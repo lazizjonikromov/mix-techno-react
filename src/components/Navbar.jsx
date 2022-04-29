@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
     const [burger, setBurger] = useState(false)
     const [navbar, setNavbar] = useState(false)
+    const location = useLocation()
     const changeNavbar = () => {
         if (window.scrollY >= 30) {
             setNavbar(true);
@@ -36,19 +37,19 @@ const Navbar = () => {
                             <ul className={`nav-menu d-flex justify-content-around align-items-center`}>
 
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='/' className='nav-text'> ГЛАВНАЯ </Link>
+                                    <Link onClick={() => setBurger(false)} to='/' className={`nav-text ${location.pathname === '/' ? 'actived' : ''}`}> ГЛАВНАЯ </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='/services' className='nav-text'> НАШИ УСЛУГИ </Link>
+                                    <Link onClick={() => setBurger(false)} to='/services' className={`nav-text ${location.pathname === '/services' ? 'actived' : ''}`}> НАШИ УСЛУГИ </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='/portfolio' className='nav-text'> ПОРТФОЛИО </Link>
+                                    <Link onClick={() => setBurger(false)} to='/portfolio' className={`nav-text ${location.pathname === '/portfolio' ? 'actived' : ''}`}> ПОРТФОЛИО </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='/about' className='nav-text'> О КОМПАНИИ </Link>
+                                    <Link onClick={() => setBurger(false)} to='/about' className={`nav-text ${location.pathname === '/about' ? 'actived' : ''}`}> О КОМПАНИИ </Link>
                                 </li>
                                 <li>
-                                    <Link onClick={() => setBurger(false)} to='/contact' className='nav-text'> КОНТАКТЫ </Link>
+                                    <Link onClick={() => setBurger(false)} to='/contact' className={`nav-text ${location.pathname === '/contact' ? 'actived' : ''}`}> КОНТАКТЫ </Link>
                                 </li>
 
                                 <a href="tel: +998946408356" className="myBtn text-uppercase">
