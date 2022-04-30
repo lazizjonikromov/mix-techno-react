@@ -26,6 +26,7 @@ import Services from "./pages/Services";
 import Contact from "./components/Contact";
 import Send from "./components/Send";
 import Portfolio from "./components/Portfolio";
+import Up from "./components/Up";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -44,6 +45,7 @@ ReactDOM.render(
       <Route path="/send-contact" exact component={Send} />
     </Switch>
     <Footer />
+    <Up />
   </BrowserRouter>,
   document.getElementById("root")
 );

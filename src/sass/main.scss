@@ -80,6 +80,81 @@ body {
 
     }
 
+    
+    .icon {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+
+        -webkit-mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+
+        background-color: $white;
+
+        &.icon-up {
+            mask-image: url("../image/up.png");
+            -webkit-mask-image: url("../image/up.png");
+        }
+
+    }
+
+    .UP {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 50px;
+        // left: 7.5vh;
+        right: 40px;
+        background: $org;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        z-index: 999999;
+
+        &.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .icon-up {
+            transform: translateY(-1px);
+            animation: up2 2s ease-in-out infinite;
+        }
+
+        @keyframes up2 {
+
+            0%,
+            100%,
+            20%,
+            50%,
+            80% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-15px);
+            }
+
+            60% {
+                transform: translateY(-7px);
+            }
+        }
+
+        @media(max-width: 767px) {
+            right: 20px;
+            bottom: 30px;
+        }
+    }
+
+
     .card,
     .card-header,
     .card-body {
