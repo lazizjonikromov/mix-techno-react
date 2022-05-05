@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
+import { EffectFade, Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Services = () => {
     return (
@@ -18,19 +22,22 @@ const Services = () => {
                         <div className="top-sphere">
                             <div></div>
                         </div>
-                        
-                        <div className="col-12">
+
+                        <div className="col-11 mx-auto">
 
                             <Swiper
-                                slidesPerView={1}
+                                effect={"fade"}
                                 loop={true}
-                                speed={1000}
-                                spaceBetween={40}
+                                spaceBetween={30}
+                                // navigation={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
                                 autoplay={{
-                                    delay: 4000,
+                                    delay: 10000,
                                     disableOnInteraction: false,
                                 }}
-                                modules={[Autoplay]}
+                                modules={[EffectFade, Autoplay, Navigation, Pagination]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
@@ -79,7 +86,7 @@ const Services = () => {
                                             </div>
                                             <div className="card-body">
                                                 <p>
-                                                    Комплектующие, краны
+                                                    Преобразователь частоты Delta
                                                 </p>
                                                 <h5>
                                                     Продажа техники и комплектующих
@@ -119,6 +126,7 @@ const Services = () => {
                             <div></div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </>

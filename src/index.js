@@ -27,6 +27,8 @@ import Contact from "./components/Contact";
 import Send from "./components/Send";
 import Portfolio from "./components/Portfolio";
 import Up from "./components/Up";
+import "aos/dist/aos.css";
+import "aos/dist/aos.js";
 
 ReactDOM.render(
   <BrowserRouter>

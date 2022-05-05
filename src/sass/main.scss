@@ -676,8 +676,60 @@ body {
                 margin-top: 20px;
             }
 
+            // .swiper-button-next, .swiper-button-prev{
+            //     top: 97%;
+            // }
+            
+            // .swiper-button-next{
+            //     right: 570px;
+            //     &::after{
+            //         font-size: 40px;
+            //         color: $org;
+            //     }
+            // }
+
+            // .swiper-button-prev{
+            //     left: 570px;
+            //     &::after{
+            //         font-size: 40px;
+            //         color: $org;
+            //     }
+            // }
+
+            .swiper-pagination-bullet{
+                background: $org;
+                width: 15px;
+                height: 15px;
+                
+            }
+
+            .swiper-pagination{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width:992px) {
+                    bottom: 60px;
+                }
+            }
+
+            .swiper-pagination-bullet{
+                width: 20px;
+                height: 20px;
+                transition: all .4s ease-in-out;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: transparent;
+                border: 5px solid $org;
+            }
+
             .swiper-slide {
                 width: 350px;
+            }
+
+            .swiper-fade{
+                height: 780px;
             }
 
             .service-card-one {
@@ -761,6 +813,7 @@ body {
                 transition: all .5s ease-in-out;
                 border-radius: 20px;
                 cursor: default;
+                background: $org;
 
 
                 p {
@@ -772,12 +825,13 @@ body {
                     margin-bottom: 15px;
                     transition: all .3s ease-in-out;
                     text-transform: uppercase;
+                    color: #000;
                 }
 
                 .card-header {
                     img {
                         width: 100%;
-                        height: 600px;
+                        height: 500px;
                         border-top-left-radius: 20px;
                         border-top-right-radius: 20px;
                         user-select: none;
@@ -792,12 +846,12 @@ body {
                 .card-body {
 
                     p {
-                        color: $dark;
+                        color: $white;
                         transition: all .3s ease-in-out;
                     }
 
                     h5 {
-                        color: $org;
+                        color: #000;
                     }
 
                     @media(max-width:576px) {
@@ -815,7 +869,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transform: translate(50px, 25px);
+                        transform: translate(581px, 25px);
                         transition: all .9s ease-in-out;
                         cursor: pointer;
 
@@ -826,11 +880,20 @@ body {
                         img {
                             width: 10px;
                         }
+
+                        
+                        @media (max-width:992px) {
+                            display: none;
+                        }
                     }
 
                     #btn-srv-top {
                         @media(max-width:576px) {
                             margin-top: 10px;
+                        }
+                        
+                        @media (max-width:992px) {
+                            display: none;
                         }
                     }
 
@@ -844,7 +907,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        transform: translate(50px, 25px);
+                        transform: translate(581px, 25px);
                         transition: all .9s ease-in-out;
                         cursor: pointer;
 
@@ -856,14 +919,18 @@ body {
                             width: 10px;
                         }
 
+                        @media (max-width:992px) {
+                            display: none;
+                        }
+
                     }
                 }
 
-                &:hover {
-                    background: $org;
+                // &:hover {
+                    // background: $org;
+                    margin-top: 20px;
                     box-shadow:
-                        0px 5px 10px rgba(218, 127, 52, 0.788),
-                        0px 5px 20px rgba(204, 141, 23, 0.842);
+                        0px 5px 15px rgba(204, 141, 23, 0.842);
 
                     p {
                         color: $white;
@@ -906,7 +973,7 @@ body {
                             transform: translate(180px, 25px);
                         }
                     }
-                }
+                // }
 
                 @media(max-width:992px) {
                     margin-top: 80px;

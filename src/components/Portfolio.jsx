@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { SpinnerDotted } from 'spinners-react';
-
+import Aos from "aos";
 const Portfolio = () => {
+
 
     const [loader, setLoder] = useState(true);
 
     useEffect(() => {
+        Aos.init({
+          duration: 1700,
+        });
+    
         setTimeout(() => {
             setLoder(false);
         }, 2000);
@@ -16,8 +21,7 @@ const Portfolio = () => {
                 <div className="loader">
                     <img src="/image/logo.svg" alt="" />
                     <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
-                </div> : ''
-            }
+                </div> : <>
             <div className="portfolio">
 
                 <div className="header">
@@ -29,7 +33,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="section-01">
+                {/* <div className="section-01">
                     <div className="blur"></div>
                     <div className="container">
                         <div className="row section-01-text">
@@ -224,35 +228,29 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="section-08">
                     <div className="blur"></div>
                     <div className="container">
                         <div className="col-12 text-center text">
-                            <h2 data-aos="zoom-out">Выполненные и разработанные проекты специалистами <br /> <span>MIX TECHNO HYDRAULICS</span> </h2>
+                            <h2>Выполненные и разработанные проекты специалистами <br /> <span>MIX TECHNO HYDRAULICS</span> </h2>
                         </div>
                         <div className="row section-08-main d-flex">
-                            <div data-aos="fade-right"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div data-aos='fade-right' className="col-lg-4 cart">
                                 <img src="/image/section-08-main-01.png" alt="" className='w-100' />
                                 <h5>
                                     Модернизация электрооборудования и автоматизация роликовой нагревательной печи. <br />
                                     АО Узметкамбинат
                                 </h5>
                             </div>
-                            <div data-aos="fade-up"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div data-aos='fade-up' className="col-lg-4 cart">
                                 <img src="/image/section-08-main-02.png" alt="" className='w-100' />
                                 <h5>
                                     Модернизация электро-оборудываемого мостового крана<br />
                                     Заказчик: АО Узметкамбинат
                                 </h5>
                             </div>
-                            <div data-aos="fade-left"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div data-aos='fade-left' className="col-lg-4 cart">
                                 <img src="/image/section-08-main-03.png" alt="" className='w-100' />
                                 <h5>
                                     Разработана и в процессе внедрения: <br />
@@ -262,36 +260,30 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="section-09">
+                <div className="section-09 mb-4">
                     <div className="blur"></div>
                     <div className="container">
                         <div className="col-12 text-center text">
-                            <h2 data-aos="zoom-out">
+                            <h2>
                                 Выполненные и разработанные проекты от <br /> <span>MIX TECHNO HYDRAULICS</span>
                             </h2>
                         </div>
                         <div className="row section-09-main d-flex">
-                            <div data-aos="fade-right"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-09-main-01.png" alt="" className='w-100' />
                                 <h5>
                                     Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
                                     АО “Алмалыкский ГМК
                                 </h5>
                             </div>
-                            <div data-aos="fade-up"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-09-main-02.png" alt="" className='w-100' />
                                 <h5>
                                     Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
                                     Заказчик: АО Узметкамбинат
                                 </h5>
                             </div>
-                            <div data-aos="fade-left"
-                                data-aos-offset="700"
-                                data-aos-easing="ease-in-sine" className="col-lg-4 cart">
+                            <div className="col-lg-4 cart">
                                 <img src="/image/section-09-main-03.png" alt="" className='w-100 img3' />
                                 <h5>
                                     Модернизация и автоматизация пресса для металла и отходов <br />
@@ -301,7 +293,7 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="section-10">
+                {/* <div className="section-10">
                     <div className="bg-images d-flex flex-column">
                         <div className="top d-flex">
                             <div data-aos="zoom-in" className="topLeft w-50">
@@ -338,8 +330,10 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
+            </>
+            }
         </>
     )
 }

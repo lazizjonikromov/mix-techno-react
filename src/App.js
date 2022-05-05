@@ -4,8 +4,6 @@ import Header from "./components/Header";
 import Montaj from "./components/Montaj";
 import Services from "./components/Services";
 
-import "aos/dist/aos.css";
-import "aos/dist/aos.js";
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { SpinnerDotted } from "spinners-react";
