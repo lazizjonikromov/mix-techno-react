@@ -8,9 +8,9 @@ const Portfolio = () => {
 
     useEffect(() => {
         Aos.init({
-          duration: 1700,
+            duration: 1700,
         });
-    
+
         setTimeout(() => {
             setLoder(false);
         }, 2000);
@@ -22,18 +22,18 @@ const Portfolio = () => {
                     <img src="/image/logo.svg" alt="" />
                     <SpinnerDotted size={99} thickness={100} speed={100} color="#ffa616" />
                 </div> : <>
-            <div className="portfolio">
+                    <div className="portfolio">
 
-                <div className="header">
-                    <div className="container">
-                        <div className="row header-text">
-                            <div className="col-12">
-                                <h1 data-aos='fade-up'>OOO ‘MIX TECHNO HYDRAULICS’</h1>
+                        <div className="header">
+                            <div className="container">
+                                <div className="row header-text">
+                                    <div className="col-12">
+                                        <h1 data-aos='fade-up'>OOO ‘MIX TECHNO HYDRAULICS’</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                {/* <div className="section-01">
+                        {/* <div className="section-01">
                     <div className="blur"></div>
                     <div className="container">
                         <div className="row section-01-text">
@@ -229,70 +229,147 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div> */}
-                <div className="section-08">
-                    <div className="blur"></div>
-                    <div className="container">
-                        <div className="col-12 text-center text">
-                            <h2>Выполненные и разработанные проекты специалистами <br /> <span>MIX TECHNO HYDRAULICS</span> </h2>
-                        </div>
-                        <div className="row section-08-main d-flex">
-                            <div data-aos='fade-right' className="col-lg-4 cart">
-                                <img src="/image/section-08-main-01.png" alt="" className='w-100' />
-                                <h5>
-                                    Модернизация электрооборудования и автоматизация роликовой нагревательной печи. <br />
-                                </h5>
+                        <div className="section-08">
+                            <div className="blur"></div>
+                            <div className="top-sphere">
+                                <div></div>
                             </div>
-                            <div data-aos='fade-up' className="col-lg-4 cart">
-                                <img src="/image/section-08-main-02.png" alt="" className='w-100' />
-                                <h5>
-                                    Модернизация электро-оборудываемого мостового крана<br />
-                                    Заказчик: АО Узметкамбинат
-                                </h5>
+                            <div className="container">
+                                <div className="col-12 text-center text">
+                                    <h2>Выполненные и разработанные проекты специалистами <br /> <span>MIX TECHNO HYDRAULICS</span> </h2>
+                                </div>
+                                <div className="row section-08-main d-flex">
+                                    <div className="col-12">
+                                        <div data-aos='fade-right' className="cart-08">
+                                            <div className="top-sphere">
+                                                <div></div>
+                                            </div>
+                                            <img src="/image/section-08-main-01.png" alt="" />
+                                            <h5>
+                                                Модернизация электрооборудования и  автоматизация  <br /> роликовой нагревательной печи. <br />
+                                            </h5>
+                                            <div className="bottom-sphere">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div data-aos='fade-left' className="cart-08">
+
+                                            <h5 className='ml-0'>
+                                                Модернизация электро-оборудываемого мостового крана<br />
+                                                Заказчик: АО Узметкамбинат
+                                            </h5>
+                                            <img src="/image/section-08-main-02.png" alt="" className='img-02' />
+                                        </div>
+                                        <div data-aos='fade-right' className="cart-08">
+                                            <div className="top-sphere">
+                                                <div></div>
+                                            </div>
+                                            <img src="/image/section-08-main-03.png" alt="" />
+                                            <h5 className='text-mis'>
+                                                Разработан и внедрен: <br />
+                                                Автоматизация и диспетчеризация систем водоснабжения.
+                                            </h5>
+                                            <div className="bottom-sphere">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div data-aos='fade-left' className="col-lg-4 cart">
-                                <img src="/image/section-08-main-03.png" alt="" className='w-100' />
-                                <h5>
-                                    Разработан и внедрен: <br />
-                                    Автоматизация и диспетчеризация систем водоснабжения.
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="section-09 mb-4">
-                    <div className="blur"></div>
-                    <div className="container">
-                        <div className="col-12 text-center text">
-                            <h2>
-                                Выполненные и разработанные проекты от <br /> <span>MIX TECHNO HYDRAULICS</span>
-                            </h2>
-                        </div>
-                        <div className="row section-09-main d-flex">
-                            <div className="col-lg-4 cart">
-                                <img src="/image/section-09-main-01.png" alt="" className='w-100' />
-                                <h5>
-                                    Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
-                                    АО “Алмалыкский ГМК
-                                </h5>
-                            </div>
-                            <div className="col-lg-4 cart">
-                                <img src="/image/section-09-main-02.png" alt="" className='w-100' />
-                                <h5>
-                                    Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
-                                    Заказчик: АО Узметкамбинат
-                                </h5>
-                            </div>
-                            <div className="col-lg-4 cart">
-                                <img src="/image/section-09-main-03.png" alt="" className='w-100 img3' />
-                                <h5>
-                                    Модернизация и автоматизация пресса для металла и отходов <br />
-                                    Ташкент  Вторчермет
-                                </h5>
+                            <div className="bottom-sphere">
+                                <div></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                {/* <div className="section-10">
+
+                        <div className="section-08">
+                            <div className="blur"></div>
+                            <div className="top-sphere">
+                                <div></div>
+                            </div>
+                            <div className="container">
+                                <div className="col-12 text-center text">
+                                    <h2>
+                                        Выполненные и разработанные проекты от <br /> <span>MIX TECHNO HYDRAULICS</span>
+                                    </h2>
+                                </div>
+                                <div className="row section-08-main d-flex">
+                                    <div className="col-12">
+                                        <div data-aos='fade-right' className="cart-08">
+                                            <div className="top-sphere">
+                                                <div></div>
+                                            </div>
+                                            <img src="/image/section-09-main-01.png" alt="" />
+                                            <h5 className='text-mis'>
+                                                Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
+                                                АО “Алмалыкский ГМК
+                                            </h5>
+                                            <div className="bottom-sphere">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div data-aos='fade-left' className="cart-08">
+                                            <h5 className='ml-0 pt-4'>
+                                                Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
+                                                Заказчик: АО Узметкамбинат
+                                            </h5>
+                                            <img src="/image/section-09-main-02.png" alt="" className='img-02' />
+                                        </div>
+                                        <div data-aos='fade-right' className="cart-08">
+                                            <div className="top-sphere">
+                                                <div></div>
+                                            </div>
+                                            <img src="/image/section-09-main-03.png" alt="" />
+                                            <h5 className='text-mis'>
+                                                Модернизация и автоматизация пресса для металла и отходов <br />
+                                                Ташкент  Вторчермет
+                                            </h5>
+                                            <div className="bottom-sphere">
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bottom-sphere">
+                                <div></div>
+                            </div>
+                        </div>
+
+
+                        {/* <div className="section-09 mb-4">
+                            <div className="blur"></div>
+                            <div className="container">
+                                <div className="col-12 text-center text">
+                                    <h2>
+                                        Выполненные и разработанные проекты от <br /> <span>MIX TECHNO HYDRAULICS</span>
+                                    </h2>
+                                </div>
+                                <div className="row section-09-main d-flex">
+                                    <div className="col-lg-4 cart">
+                                        <img src="/image/section-09-main-01.png" alt="" className='w-100' />
+                                        <h5>
+                                            Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
+                                            АО “Алмалыкский ГМК
+                                        </h5>
+                                    </div>
+                                    <div className="col-lg-4 cart">
+                                        <img src="/image/section-09-main-02.png" alt="" className='w-100' />
+                                        <h5>
+                                            Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
+                                            Заказчик: АО Узметкамбинат
+                                        </h5>
+                                    </div>
+                                    <div className="col-lg-4 cart">
+                                        <img src="/image/section-09-main-03.png" alt="" className='w-100 img3' />
+                                        <h5>
+                                            Модернизация и автоматизация пресса для металла и отходов <br />
+                                            Ташкент  Вторчермет
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+                        {/* <div className="section-10">
                     <div className="bg-images d-flex flex-column">
                         <div className="top d-flex">
                             <div data-aos="zoom-in" className="topLeft w-50">
@@ -330,8 +407,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div> */}
-            </div>
-            </>
+                    </div>
+                </>
             }
         </>
     )
