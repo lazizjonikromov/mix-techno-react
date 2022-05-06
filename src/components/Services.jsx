@@ -23,7 +23,7 @@ const Services = () => {
                             <div></div>
                         </div>
 
-                        <div className="col-11 mx-auto">
+                        <div className="col-11 mx-auto swiper-service">
 
                             <Swiper
                                 effect={"fade"}
@@ -41,7 +41,7 @@ const Services = () => {
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
-                                    <div className="col-lg-12 col-md-6">
+                                    <div className="col-lg-12 col-md-6 slide-card-service">
                                         <Link to='/service-1' className="card service-card-one">
                                             <div className="card-header">
                                                 <img src="./image/service-01.jpg" alt="" className='w-100' />
@@ -79,7 +79,7 @@ const Services = () => {
                                 </SwiperSlide> */}
 
                                 <SwiperSlide>
-                                    <div className="col-lg-12 col-md-6">
+                                    <div className="col-lg-12 col-md-6 slide-card-service">
                                         <Link to='/service-2' className="card service-card-one">
                                             <div className="card-header">
                                                 <img src="./image/service-04.jpg" alt="" className='w-100' />
@@ -100,7 +100,7 @@ const Services = () => {
                                 </SwiperSlide>
 
                                 <SwiperSlide>
-                                    <div className="col-lg-12 col-md-6">
+                                    <div className="col-lg-12 col-md-6 slide-card-service">
                                         <Link to='/service-3' className="card service-card-one">
                                             <div className="card-header">
                                                 <img src="./image/service-03.png" alt="" className='w-100' />

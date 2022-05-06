@@ -629,6 +629,12 @@ body {
             padding: 120px 0 0px 0;
         }
 
+        .container{
+            @media (max-width:992px) {
+                padding: 0;
+            }
+        }
+
         .img {
             position: absolute;
             top: 50%;
@@ -672,8 +678,22 @@ body {
             user-select: none;
             position: relative;
 
+
             @media(max-width:576px) {
                 margin-top: 20px;
+            }
+
+            .swiper-service{
+                @media (max-width:992px) {
+                    padding: 0;
+                }
+
+                .slide-card-service{
+                    @media (max-width:992px) {
+                        padding: 0px;
+                    }
+                }
+
             }
 
             // .swiper-button-next, .swiper-button-prev{
