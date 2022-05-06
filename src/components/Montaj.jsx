@@ -8,9 +8,9 @@ const Montaj = () => {
                     <div className="row">
                         <div className="zed col-12">
                             <div data-aos="fade-down" className="montaj-zed-blur mb-5">
-                                <h2>МОДЕРНИЗАЦИЯ И РЕМОНТ ВСЕХ ВИДОВ КРАНОВ</h2>
+                                <h2>МОДЕРНИЗАЦИЯ ВСЕХ ВИДОВ ГРУЗОВОЙ ТЕХНИКИ</h2>
                                 <h1>ВЫСШЕЕ КАЧЕСТВО СЕРВИСА</h1>
-                                <p>Ввод и вывод из эксплуатации башенных кранов любой сложности</p>
+                                <p>Модернизация грузовой техники любой сложности</p>
                             </div>
 
                             <div className="d-flex justify-content-center align-items-center myBtns">

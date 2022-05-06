@@ -240,7 +240,6 @@ const Portfolio = () => {
                                 <img src="/image/section-08-main-01.png" alt="" className='w-100' />
                                 <h5>
                                     Модернизация электрооборудования и автоматизация роликовой нагревательной печи. <br />
-                                    АО Узметкамбинат
                                 </h5>
                             </div>
                             <div data-aos='fade-up' className="col-lg-4 cart">
@@ -253,7 +252,7 @@ const Portfolio = () => {
                             <div data-aos='fade-left' className="col-lg-4 cart">
                                 <img src="/image/section-08-main-03.png" alt="" className='w-100' />
                                 <h5>
-                                    Разработана и в процессе внедрения: <br />
+                                    Разработан и внедрен: <br />
                                     Автоматизация и диспетчеризация систем водоснабжения.
                                 </h5>
                             </div>

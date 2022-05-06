@@ -48,7 +48,7 @@ const Services = () => {
                                             </div>
                                             <div className="card-body">
                                                 <p>Модернизация, обслуживание</p>
-                                                <h5>МОДЕРНИЗАЦИЯ И РЕМОНТ ВСЕХ ВИДОВ КРАНОВ</h5>
+                                                <h5>МОДЕРНИЗАЦИЯ ГРУЗОВОЙ ТЕХНИКИ</h5>
                                                 <div className="srv-btn">
                                                     <img src="./image/service-btn.png" alt="" />
                                                 </div>
@@ -82,7 +82,7 @@ const Services = () => {
                                     <div className="col-lg-12 col-md-6 slide-card-service">
                                         <Link to='/service-2' className="card service-card-one">
                                             <div className="card-header">
-                                                <img src="./image/service-04.jpg" alt="" className='w-100' />
+                                                <img src="./image/service-02.jpg" alt="" className='w-100' />
                                             </div>
                                             <div className="card-body">
                                                 <p>
@@ -103,7 +103,7 @@ const Services = () => {
                                     <div className="col-lg-12 col-md-6 slide-card-service">
                                         <Link to='/service-3' className="card service-card-one">
                                             <div className="card-header">
-                                                <img src="./image/service-03.png" alt="" className='w-100' />
+                                                <img src="./image/service-03.jpg" alt="" className='w-100' />
                                             </div>
                                             <div className="card-body">
                                                 <p>
