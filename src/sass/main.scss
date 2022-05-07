@@ -3325,6 +3325,73 @@ body {
                 }
             }
 
+            .top-sphere-02 {
+                position: absolute;
+                width: 600px;
+                height: 600px;
+                top: 0;
+                left: 0;
+                animation: anim3 40s linear infinite;
+                border-radius: 50%;
+                z-index: -1;
+
+                div {
+                    width: 60px;
+                    height: 60px;
+                    background-color: transparent;
+                    border: 3px solid $org;
+                    border-radius: 50%;
+                    box-shadow:
+                        0px 1px 10px rgba(218, 127, 52, 0.788),
+                        0px 1px 10px rgba(204, 141, 23, 0.842);
+                }
+            }
+
+            .bottom-sphere-02 {
+                position: absolute;
+                width: 800px;
+                height: 800px;
+                top: 0;
+                right: 0;
+                animation: anim4 30s linear infinite;
+                z-index: -1;
+
+                div {
+                    width: 120px;
+                    height: 120px;
+                    background-color: transparent;
+                    border: 3px solid $org;
+                    box-shadow:
+                        0px 1px 10px rgba(218, 127, 52, 0.788),
+                        0px 1px 10px rgba(204, 141, 23, 0.842);
+                }
+            }
+
+            @keyframes anim3 {
+                0% {
+                    transform: rotate(360deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
+
+
+            @keyframes anim4 {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                // 50%{
+                //     transform: rotate(180deg);
+                // }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
 
             // .blur {
             //     position: absolute;
@@ -3395,31 +3462,31 @@ body {
                         }
                     }
 
-                    .pt-4{
-                        @media (max-width:992px) {
-                            margin-left: 30px !important;
-                            margin-bottom: 20px;
-                        }
-                    }
+                    // .pt-4{
+                    //     @media (max-width:992px) {
+                    //         margin-left: 30px !important;
+                    //         margin-bottom: 20px;
+                    //     }
+                    // }
 
-                    .ml-0{
-                        @media (max-width:992px) {
-                            margin-left: 30px !important;
-                            margin-bottom: 20px;
-                            margin-top: 20px;
-                        }
-                    }
+                    // .ml-0{
+                    //     @media (max-width:992px) {
+                    //         margin-left: 30px !important;
+                    //         margin-bottom: 20px;
+                    //         margin-top: 20px;
+                    //     }
+                    // }
 
                     .img-02 {
                         margin-left: 30px;
                     }
 
-                    .text-mis {
-                        padding-top: 38px;
-                        @media (max-width:992px) {
-                            padding-top: 55px;
-                        }
-                    }
+                    // .text-mis {
+                    //     padding-top: 38px;
+                    //     @media (max-width:992px) {
+                    //         padding-top: 55px;
+                    //     }
+                    // }
 
                     .br-rad {
                         border-radius: 25px;
@@ -3434,9 +3501,11 @@ body {
                         margin-left: 30px;
                         height: 150px;
                         width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                         @media (max-width:992px) {
-                            padding: 15px 10px;
                             width: 113%;
                             height: 210px;
                             padding-top: 50px;

@@ -241,19 +241,12 @@ const Portfolio = () => {
                                 <div className="row section-08-main d-flex">
                                     <div className="col-12">
                                         <div data-aos='fade-right' className="cart-08">
-                                            <div className="top-sphere">
-                                                <div></div>
-                                            </div>
                                             <img src="/image/section-08-main-01.jpg" alt="" className='br-rad'/>
                                             <h5>
                                                 Модернизация электрооборудования и  автоматизация  <br /> роликовой нагревательной печи. <br />
                                             </h5>
-                                            <div className="bottom-sphere">
-                                                <div></div>
-                                            </div>
                                         </div>
                                         <div data-aos='fade-left' className="cart-08">
-
                                             <h5 className='ml-0'>
                                                 Модернизация электро-оборудываемого мостового крана<br />
                                                 Заказчик: АО Узметкамбинат
@@ -261,17 +254,11 @@ const Portfolio = () => {
                                             <img src="/image/section-08-main-02.png" alt="" className='img-02' />
                                         </div>
                                         <div data-aos='fade-right' className="cart-08">
-                                            <div className="top-sphere">
-                                                <div></div>
-                                            </div>
                                             <img src="/image/section-08-main-03.png" alt="" />
                                             <h5 className='text-mis'>
                                                 Разработан и внедрен: <br />
                                                 Автоматизация и диспетчеризация систем водоснабжения.
                                             </h5>
-                                            <div className="bottom-sphere">
-                                                <div></div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -283,7 +270,7 @@ const Portfolio = () => {
 
                         <div className="section-08">
                             <div className="blur"></div>
-                            <div className="top-sphere">
+                            <div className="top-sphere-02">
                                 <div></div>
                             </div>
                             <div className="container">
@@ -295,42 +282,30 @@ const Portfolio = () => {
                                 <div className="row section-08-main d-flex">
                                     <div className="col-12">
                                         <div data-aos='fade-right' className="cart-08">
-                                            <div className="top-sphere">
-                                                <div></div>
-                                            </div>
                                             <img src="/image/section-09-main-01.jpg" alt="" className='br-rad'/>
                                             <h5 className='text-mis'>
                                                 Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
                                                 АО “Алмалыкский ГМК
                                             </h5>
-                                            <div className="bottom-sphere">
-                                                <div></div>
-                                            </div>
                                         </div>
                                         <div data-aos='fade-left' className="cart-08">
-                                            <h5 className='ml-0 pt-4'>
+                                            <h5 className='ml-0'>
                                                 Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
                                                 Заказчик: АО Узметкамбинат
                                             </h5>
                                             <img src="/image/section-09-main-02.jpg" alt="" className='img-02 br-rad' />
                                         </div>
                                         <div data-aos='fade-right' className="cart-08">
-                                            <div className="top-sphere">
-                                                <div></div>
-                                            </div>
                                             <img src="/image/section-09-main-03.png" alt="" />
                                             <h5 className='text-mis'>
                                                 Модернизация и автоматизация пресса для металла и отходов <br />
                                                 Ташкент  Вторчермет
                                             </h5>
-                                            <div className="bottom-sphere">
-                                                <div></div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="bottom-sphere">
+                            <div className="bottom-sphere-02">
                                 <div></div>
                             </div>
                         </div>
