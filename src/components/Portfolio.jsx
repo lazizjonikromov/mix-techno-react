@@ -244,7 +244,7 @@ const Portfolio = () => {
                                             <div className="top-sphere">
                                                 <div></div>
                                             </div>
-                                            <img src="/image/section-08-main-01.png" alt="" />
+                                            <img src="/image/section-08-main-01.jpg" alt="" className='br-rad'/>
                                             <h5>
                                                 Модернизация электрооборудования и  автоматизация  <br /> роликовой нагревательной печи. <br />
                                             </h5>
@@ -298,7 +298,7 @@ const Portfolio = () => {
                                             <div className="top-sphere">
                                                 <div></div>
                                             </div>
-                                            <img src="/image/section-09-main-01.png" alt="" />
+                                            <img src="/image/section-09-main-01.jpg" alt="" className='br-rad'/>
                                             <h5 className='text-mis'>
                                                 Поставка, монтаж и пусконаладка Однобалочного  опорного мостового крана г/п на 16 тн. <br />
                                                 АО “Алмалыкский ГМК
@@ -312,7 +312,7 @@ const Portfolio = () => {
                                                 Модернизация электро-оборудования технологического крана грузоподьемностью 20тн Внедрение радио управления краном <br />
                                                 Заказчик: АО Узметкамбинат
                                             </h5>
-                                            <img src="/image/section-09-main-02.png" alt="" className='img-02' />
+                                            <img src="/image/section-09-main-02.jpg" alt="" className='img-02 br-rad' />
                                         </div>
                                         <div data-aos='fade-right' className="cart-08">
                                             <div className="top-sphere">
