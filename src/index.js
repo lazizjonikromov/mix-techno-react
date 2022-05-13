@@ -15,10 +15,14 @@ import "swiper/css/effect-coverflow";
 import "./sass/main.scss";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Service1 from "./pages/Service1";
-import Service2 from "./pages/Service2";
+// import Service2 from "./pages/Service2";
 import Service3 from "./pages/Service3";
 import Service4 from "./pages/Service4";
 import ScrollToTop from "./components/ScrollToTop";
@@ -47,10 +51,24 @@ ReactDOM.render(
       <Route path="/send-contact" exact component={Send} />
     </Switch>
     <Footer />
+
+    <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      theme="light"
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      style={{ zIndex: "999999999" }}
+    />
+
     <Up />
   </BrowserRouter>,
   document.getElementById("root")
 );
 
 reportWebVitals();
-

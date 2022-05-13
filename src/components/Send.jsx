@@ -1,8 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import { SpinnerDotted } from 'spinners-react';
 
+import axios from 'axios';
+import { toast } from 'react-toastify';
+
 const Send = () => {
     const [loader, setLoder] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
+
+    const [name, setName] = useState('')
+    const [phone_number, setPhoneNumber] = useState('')
+
+
+    const sendForm = (e) => {
+        e.preventDefault()
+        setIsLoading(true)
+
+        axios.post('https://mix-techno.kse-lights.uz/api/', { name, phone_number })
+            .then((res) => {
+                toast.success('Ваша заявка успешно отправлена ​​и мы свяжемся с вами в ближайшее время')
+                setName('')
+                setPhoneNumber('')
+                setIsLoading(false)
+            })
+            .catch((err) => {
+                toast.error('Ошибка! Проверьте подключение к интернету')
+            })
+            .finally(() => {
+                setIsLoading(false)
+            })
+    }
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -33,13 +61,33 @@ const Send = () => {
                         </div>
 
                         <div className="row form-send">
-                            <form action="" method="post">
+                            <form onSubmit={sendForm}>
                                 <div className="input">
-                                    <input className='form-control' type="text" name='name' placeholder='Ваше имя*' required autoComplete='off' />
-                                    <input className='form-control' type="number" name='email' placeholder='Ваше телефон*' required autoComplete='off' />
+                                    <input
+                                        className='form-control'
+                                        type="text"
+                                        name='name'
+                                        placeholder='Ваше имя*'
+                                        required
+                                        autoComplete='off'
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                    />
+
+                                    <input
+                                        className='form-control'
+                                        type="number"
+                                        name='phone_number'
+                                        placeholder='Ваше телефон*'
+                                        required
+                                        autoComplete='off'
+                                        value={phone_number}
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                    />
+
                                 </div>
 
-                                <button className='btn myBtn' type='submit'>Оставить Заявку</button>
+                                <button className='btn myBtn d-flex align-items-center' type='submit' disabled={isLoading}>{isLoading ? <span className="spinner-border spinner-border-sm mr-2"/> : ""} Оставить Заявку</button>
                             </form>
                         </div>
                     </div>
