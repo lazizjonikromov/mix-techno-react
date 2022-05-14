@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -25,9 +26,9 @@ const Header = () => {
                             <h3 data-aos="fade-up">
                                 ВДОХНОВЕНИЕ ВОПЛОЩЁННОЕ В РЕАЛЬНОСТЬ
                             </h3>
-                            <a href="/send-contact" className="myBtn">
+                            <Link to="/send-contact" className="myBtn">
                                 Оставить Заявку
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
