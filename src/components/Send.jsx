@@ -77,6 +77,7 @@ const Send = () => {
                                     <input
                                         className='form-control'
                                         type="number"
+                                        min={1}
                                         name='phone_number'
                                         placeholder='Ваше телефон*'
                                         required

@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+import axios from 'axios';
+import { toast } from 'react-toastify';
+
 
 const Footer = () => {
+    const [isLoading, setIsLoading] = useState(false);
+
+    const [phone_number, setPhoneNumber] = useState('')
+
+
+    const sendForm = (e) => {
+        e.preventDefault()
+        setIsLoading(true)
+
+        axios.post('https://mix-techno.kse-lights.uz/api/', { phone_number })
+            .then((res) => {
+                toast.success('Ваша заявка успешно отправлена ​​и мы свяжемся с вами в ближайшее время')
+                setPhoneNumber('')
+                setIsLoading(false)
+            })
+            .catch((err) => {
+                toast.error('Ошибка! Проверьте подключение к интернету')
+            })
+            .finally(() => {
+                setIsLoading(false)
+            })
+    }
+
     return (
         <>
 
@@ -29,10 +56,22 @@ const Footer = () => {
                         <div className="zed col-lg-5 d-flex flex-column footer-two-section">
                             <h2>Получить информацию</h2>
                             <div className="footer-input">
-                                <form action="" className='d-flex'>
-                                    <input type="number" id='phone' className='form-control' placeholder='(XX)-XXX-XX-XX' autoComplete='off' />
+                                <form onSubmit={sendForm} className='d-flex'>
+                                    <input 
+                                        type="number" 
+                                        id='phone' 
+                                        min={1}
+                                        name='phone_number'
+                                        className='form-control' 
+                                        placeholder='(XX)-XXX-XX-XX' 
+                                        autoComplete='off'
+                                        required 
+                                        value={phone_number}
+                                        onChange={(e) => setPhoneNumber(e.target.value)}
+                                    />
                                     <label htmlFor="phone">+998 </label>
-                                    <button type='submit' className='btn'>
+
+                                    <button type='submit' className='btn d-flex align-items-center' disabled={isLoading}>{isLoading ? <span className="spinner-border spinner-border-sm text-warning"/> : ""}
                                         Отправить
                                     </button>
                                 </form>
