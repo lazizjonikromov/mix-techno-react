@@ -17,6 +17,7 @@ const App = () => {
 
     setTimeout(() => {
       setLoder(false);
+      console.clear()
     }, 2000);
   }, []);
 

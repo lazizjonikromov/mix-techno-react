@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 import "./sass/main.scss";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 import { ToastContainer } from "react-toastify";
@@ -35,7 +35,7 @@ import "aos/dist/aos.css";
 import "aos/dist/aos.js";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Navbar />
     <ScrollToTop />
 
@@ -67,8 +67,8 @@ ReactDOM.render(
     />
 
     <Up />
-  </BrowserRouter>,
-  document.getElementById("root")
+  </HashRouter>,
+  document.getElementById("mix-techno")
 );
 
 reportWebVitals();
