@@ -14,7 +14,7 @@ const Footer = () => {
         e.preventDefault()
         setIsLoading(true)
 
-        axios.post('https://mix-techno.kse-lights.uz/api/', { phone_number })
+        axios.post('https://mix-techno.uz/bot/', { phone_number })
             .then((res) => {
                 toast.success('Ваша заявка успешно отправлена ​​и мы свяжемся с вами в ближайшее время')
                 setPhoneNumber('')

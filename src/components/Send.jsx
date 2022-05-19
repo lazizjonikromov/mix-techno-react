@@ -16,7 +16,7 @@ const Send = () => {
         e.preventDefault()
         setIsLoading(true)
 
-        axios.post('https://mix-techno.kse-lights.uz/api/', { name, phone_number })
+        axios.post('https://mix-techno.uz/bot/', { name, phone_number })
             .then((res) => {
                 toast.success('Ваша заявка успешно отправлена ​​и мы свяжемся с вами в ближайшее время')
                 setName('')
