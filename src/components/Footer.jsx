@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import axios from 'axios';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -48,9 +49,9 @@ const Footer = () => {
                                 </a>
                             </div>
                             <ul>
-                                <li><a href="/">ГЛАВНАЯ</a></li>
-                                <li><a href="/services">НАШИ УСЛУГИ</a></li>
-                                <li><a href="/">ПОРТФОЛИО</a></li>
+                                <li><Link to="/">ГЛАВНАЯ</Link></li>
+                                <li><Link to="/services">НАШИ УСЛУГИ</Link></li>
+                                <li><Link to="/portfolio">ПОРТФОЛИО</Link></li>
                             </ul>
                         </div>
                         <div className="zed col-lg-5 d-flex flex-column footer-two-section">
@@ -77,8 +78,8 @@ const Footer = () => {
                                 </form>
                             </div>
                             <ul>
-                                <li><a href="/about">О КОМПАНИИ</a></li>
-                                <li><a href="/contact">КОНТАКТЫ</a></li>
+                                <li><Link to="/about">О КОМПАНИИ</Link></li>
+                                <li><Link to="/contact">КОНТАКТЫ</Link></li>
                             </ul>
                         </div>
                         <div className="zed col-lg-3 d-flex flex-column footer-three">
@@ -86,20 +87,20 @@ const Footer = () => {
                             <div className="phone-call">
                                 <div className="">
                                     <img src="./image/phone.png" alt="" />
-                                    <a href="tel:+998946408356">+998 (90) 125-56-96</a>
+                                    <a href="tel:+998901255696">+998 (90) 125-56-96</a>
                                 </div>
                                 <div className="mt-4">
                                     <img src="./image/phone.png" alt="" />
-                                    <a href="tel:+998946408356">+998 (90) 972-41-99</a>
+                                    <a href="tel:+998909724199">+998 (90) 972-41-99</a>
                                 </div>
                                 <div className="mt-4">
                                     <img src="./image/phone.png" alt="" />
-                                    <a href="tel:+998946408356">+998 (99) 817-35-08</a>
+                                    <a href="tel:+998998173508">+998 (99) 817-35-08</a>
                                 </div>
                             </div>
                             <div className="location-footer mt-4">
                                 <img src="./image/location.png" alt="" />
-                                <a href="" >100022, Узбекистан, г. <br /> Ташкент, ул. Кушбеги, 18А</a>
+                                <Link to="/contact" >100022, Узбекистан, г. <br /> Ташкент, ул. Кушбеги, 18А</Link>
                             </div>
                         </div>
                     </div>

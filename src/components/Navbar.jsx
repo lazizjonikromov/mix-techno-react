@@ -52,7 +52,7 @@ const Navbar = () => {
                                     <Link onClick={() => setBurger(false)} to='/contact' className={`nav-text ${location.pathname === '/contact' ? 'actived' : ''}`}> КОНТАКТЫ </Link>
                                 </li>
 
-                                <a href="tel: +998946408356" className="myBtn text-uppercase">
+                                <a href="tel:+998901255696" className="myBtn text-uppercase">
                                     +998 (90) 125-56-96
                                 </a>
 
