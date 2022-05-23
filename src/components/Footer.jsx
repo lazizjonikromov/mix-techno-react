@@ -36,8 +36,10 @@ const Footer = () => {
                 <div className="container">
                     <div className="row d-flex justify-content-center">
                         <div className="zed col-lg-4 d-flex flex-column">
-                            <h2>Подпишитесь на нас</h2>
-                            <div className="icons">
+                            <div className="img w-50 text-center">
+                                <img src="./image/logo.svg" alt="" className='w-100'/>
+                            </div>
+                            {/* <div className="icons">
                                 <a href="" >
                                     <img src="./image/telegram.png" alt="" />
                                 </a>
@@ -47,14 +49,19 @@ const Footer = () => {
                                 <a href="" className=''>
                                     <img src="./image/facebook.png" alt="" />
                                 </a>
-                            </div>
+                            </div> */}
                             <ul>
                                 <li><Link to="/">ГЛАВНАЯ</Link></li>
                                 <li><Link to="/services">НАШИ УСЛУГИ</Link></li>
                                 <li><Link to="/portfolio">ПОРТФОЛИО</Link></li>
+                                
                             </ul>
                         </div>
                         <div className="zed col-lg-5 d-flex flex-column footer-two-section">
+                            {/* <div className="img w-100 text-center">
+                                <img src="./image/logo.svg" alt="" className='w-25'/>
+                            </div> */}
+
                             <h2>Получить информацию</h2>
                             <div className="footer-input">
                                 <form onSubmit={sendForm} className='d-flex'>
