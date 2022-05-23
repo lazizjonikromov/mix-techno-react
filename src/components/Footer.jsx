@@ -50,10 +50,10 @@ const Footer = () => {
                                     <img src="./image/facebook.png" alt="" />
                                 </a>
                             </div> */}
-                            <ul>
+                            <ul className='mt-3'>
                                 <li><Link to="/">ГЛАВНАЯ</Link></li>
                                 <li><Link to="/services">НАШИ УСЛУГИ</Link></li>
-                                <li><Link to="/portfolio">ПОРТФОЛИО</Link></li>
+                                <li><Link to="/portfolio" className='pl-0'>ПОРТФОЛИО</Link></li>
                                 
                             </ul>
                         </div>
@@ -85,8 +85,8 @@ const Footer = () => {
                                 </form>
                             </div>
                             <ul>
-                                <li><Link to="/about">О КОМПАНИИ</Link></li>
-                                <li><Link to="/contact">КОНТАКТЫ</Link></li>
+                                <li><Link to="/about" className='pl-0'>О КОМПАНИИ</Link></li>
+                                <li><Link to="/contact" className='pl-0'>КОНТАКТЫ</Link></li>
                             </ul>
                         </div>
                         <div className="zed col-lg-3 d-flex flex-column footer-three">
