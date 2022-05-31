@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Montaj = () => {
     return (
@@ -14,8 +15,8 @@ const Montaj = () => {
                             </div>
 
                             <div className="d-flex justify-content-center align-items-center myBtns">
-                                <a data-aos="fade-up-right" href="/services" className='myBtn'>Наши услуги</a>
-                                <a data-aos="fade-up-left" href="/send-contact" className='myBtn'>Оставить Заявку</a>
+                                <Link data-aos="fade-up-right" to="/services" className='myBtn'>Наши услуги</Link>
+                                <Link data-aos="fade-up-left" to="/send-contact" className='myBtn'>Оставить Заявку</Link>
                             </div> 
                         </div>
                     </div>
